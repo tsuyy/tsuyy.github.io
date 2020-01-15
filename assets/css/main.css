@@ -68,6 +68,9 @@ h2 {
     margin-bottom: 10rem;
 }
 
+.mobile-hr {
+    display: none;
+}
 
 .footer {
     margin-top: 12.5rem;
@@ -78,7 +81,6 @@ h2 {
     text-decoration: none;
     color: #000;
 }
-
 .footer a:hover {
     color: #2fe0ac!important;
     transition: all 0.3s linear;
@@ -117,6 +119,23 @@ and (max-device-width : 515px) {
     .mobile-br {
         display: block;
     }
+
+    .mobile-hr {
+        display: block;
+    }
+
+    h2 {
+        font-size: 1.95rem!important;
+        line-height: 3rem!important;
+    }
+
+    h3 {
+        font-size: 1.75rem!important;
+        line-height: 3rem!important;
+    }
+
+    .footer a {
+        color: #2fe0ac!important;
 }
 
 /* iPads (portrait and landscape) ----------- */
