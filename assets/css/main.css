@@ -38,8 +38,8 @@ h2 {
     opacity: 1;
 }
 
-.navbar-brand {
-    width: 90px;
+.logo {
+    width: 90px!important;
 }
 
 .nav-link {
