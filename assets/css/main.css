@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Rufina&display=swap');
+
 li {
     list-style: none;
 }
@@ -57,6 +59,15 @@ h2 {
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
+  }
+
+.serif {
+    font-family: 'Rufina', serif;
+}
+
+h4 .dot {
+    margin: 1rem;
+    background-color: #2fe0ac!important;
   }
  
 .mrg-top-btm {
@@ -134,9 +145,13 @@ and (max-device-width : 515px) {
         line-height: 3rem!important;
     }
 
+    h4 {
+        line-height: 2.5rem!important;
+    }
+
     .footer a {
         color: #2fe0ac!important;
-}
+} 
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
