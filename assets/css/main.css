@@ -69,6 +69,8 @@ h2 {
 h4 .dot {
     margin: 1rem;
     background-color: #2fe0ac!important;
+    width: 8px!important;
+    height: 8px!important;
   }
  
 .mrg-top-btm {
