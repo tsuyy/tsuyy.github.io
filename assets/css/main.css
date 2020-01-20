@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rufina&display=swap');
 @import url("https://use.typekit.net/pgf5wor.css");
 
-li {
-    list-style: none;
-}
-
 h2 {
     line-height: 3.75rem!important;
 }
@@ -18,6 +14,7 @@ h2 {
     -moz-transition: opacity ease-out 0.3s;
     -o-transition: opacity ease-out 0.3s;
     transition: opacity ease-out 0.3s;
+    list-style: none;
 }
 
 .work-li li a {
@@ -72,6 +69,22 @@ h4 .dot {
     width: 8px!important;
     height: 8px!important;
   }
+
+.exp ul {
+    padding-left: 1.6rem;
+    margin: 0;
+    list-style-type: circle;
+}
+
+h6 {
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+}
+
+.spacing {
+    font-size: .8rem!important;
+    letter-spacing: 0.1em!important;
+}
  
 .mrg-top-btm {
     margin-top: 12.5rem;
