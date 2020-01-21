@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    // on scroll shadow for mobile
     $(window).scroll(function() {     
         var scroll = $(window).scrollTop();
         if (scroll > 0) {
@@ -9,6 +10,7 @@ $( document ).ready(function() {
         }
     });
 
+    // changing colors based on mousemove
     var $win = $(window),
     w = 0,h = 0,
     rgb = [],
@@ -28,5 +30,22 @@ $( document ).ready(function() {
         $('span.dot').css({"background-color": 'rgb('+rgb.join(',')+')'});
        
     }).resize();
+
+    // clipboard.js
+    var clipboard = new ClipboardJS('.clipboard');
+
+    clipboard.on('success', function(e) {
+        console.log('copied!');
+        $('#copy').popover('toggle');
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+
+    // popover
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
 
   });
