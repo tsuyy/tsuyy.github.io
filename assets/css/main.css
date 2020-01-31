@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rufina&display=swap');
 @import url("https://use.typekit.net/pgf5wor.css");
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 h2 {
     line-height: 3.75rem!important;
 }
@@ -9,23 +17,18 @@ h2 {
     padding: 0.7em;
 }
 
-.project {
-    overflow: hidden;
-    height: 445px!important;
-}
-
-.project .project-thumb {
+.project-thumb {
     -webkit-transition: transform ease-out 0.3s;
     -moz-transition: transform ease-out 0.3s;
     -o-transition: transform ease-out 0.3s;
     transition: transform ease-out 0.3s;
 }
 
-.project:hover a img {
-    transform: scale(1.04);
+.project:hover a img,
+.project:focus a img {
+    transform: scale(1.07);
     border-radius: 5%;
 }
-
 
 .logo {
     width: 90px!important;
