@@ -117,10 +117,6 @@ and (max-device-width : 515px) {
         display: none;
     }
 
-    #work li a {
-        font-size: 1.95rem!important;
-    }
-
     .shadow-onscroll {
         background-color: white;
         transition: all 0.2s linear;
@@ -153,15 +149,16 @@ and (max-device-width : 515px) {
 
     h3 {
         font-size: 1.2rem!important;
+        padding-left: 1rem;
     }
 
     h4 {
         line-height: 2.5rem!important;
     }
+
     .footer {
         margin-top: 12.5rem;
         margin-bottom: 2rem;
-        padding-left: 1rem;
     }
 
     .footer a {
@@ -175,10 +172,6 @@ and (max-device-width : 1024px) {
 
     .navbar-brand {
         width: 70px;
-    }
-
-    .work-li {
-        padding-left: 0px;
     }
 
     .shadow-onscroll {
