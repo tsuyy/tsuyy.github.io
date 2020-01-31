@@ -11,25 +11,25 @@ $( document ).ready(function() {
     });
 
     // changing colors based on mousemove
-    var $win = $(window),
-    w = 0,h = 0,
-    rgb = [],
-    getWidth = function() {
-        w = $win.width();
-        h = $win.height();
-    };
+    // var $win = $(window),
+    // w = 0,h = 0,
+    // rgb = [],
+    // getWidth = function() {
+    //     w = $win.width();
+    //     h = $win.height();
+    // };
 
-    $win.resize(getWidth).mousemove(function(e) {
+    // $win.resize(getWidth).mousemove(function(e) {
         
-        rgb = [
-            Math.round(e.pageX/w * 255),
-            Math.round(e.pageY/h * 255),
-            180
-        ];
+    //     rgb = [
+    //         Math.round(e.pageX/w * 255),
+    //         Math.round(e.pageY/h * 255),
+    //         180
+    //     ];
         
-        $('span.dot').css({"background-color": 'rgb('+rgb.join(',')+')'});
+    //     $('span.dot').css({"background-color": 'rgb('+rgb.join(',')+')'});
        
-    }).resize();
+    // }).resize();
 
     // clipboard.js
     var clipboard = new ClipboardJS('.clipboard');
