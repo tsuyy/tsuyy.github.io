@@ -42,7 +42,8 @@ h2 {
     width: 425px;
     overflow: hidden;
     display: flex;
-    border-radius: 3%;
+    border-radius: 3.5%;
+    margin-bottom: 1.5em;
 }
 
 .goodies-wrap {
