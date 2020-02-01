@@ -13,8 +13,15 @@ h2 {
     line-height: 3.75rem!important;
 }
 
-.thumb-padding {
-    padding: 0.7em;
+.goodies-thumb {
+    width: 11.5em;
+    margin-top: 1.9em;
+}
+
+.challenge-thumb, 
+.stellar-thumb {
+    margin-top: 6.5em;
+    width: 23em;
 }
 
 .project-thumb {
@@ -26,8 +33,32 @@ h2 {
 
 .project:hover a img,
 .project:focus a img {
-    transform: scale(1.07);
+    transform: scale(1.1);
     border-radius: 5%;
+}
+
+.wrap {
+    height: 425px;
+    width: 425px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 3%;
+}
+
+.goodies-wrap {
+    background-color: #DDF9EF;
+}
+
+.stentor-wrap {
+    background-color: #d8d5e7;
+}
+
+.cc-wrap {
+    background-color: #dce8f4;
+}
+
+.stellar-wrap {
+    background-color: #dfddda;
 }
 
 .logo {
