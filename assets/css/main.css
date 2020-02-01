@@ -20,7 +20,7 @@ h2 {
 
 .challenge-thumb, 
 .stellar-thumb {
-    margin-top: 6.5em;
+    margin-top: 6.8em;
     width: 23em;
 }
 
@@ -127,6 +127,15 @@ h6 {
 
 .mobile-hr {
     display: none;
+}
+
+.ul-mrg {
+    margin-left: 1.5em;
+}
+
+.resize {
+    width: 40em;
+    margin-top: 2em;
 }
 
 .footer {
