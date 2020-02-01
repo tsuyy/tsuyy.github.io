@@ -72,7 +72,8 @@ h2 {
 }
 
 
-.nav-link.active, .nav-link:hover {
+.nav-link.active, 
+.nav-link:hover {
     color: #2fe0ac!important;
     transition: all 0.3s;
     font-weight: 500!important;
@@ -174,6 +175,24 @@ and (max-device-width : 515px) {
 
     .mobile-hr {
         display: block;
+    }
+
+    .wrap {
+        width: 21em;
+        height: 21em;
+        margin: 0 auto;
+        margin-bottom: 1.9em;
+    }
+
+    .goodies-thumb {
+        margin-top: 1.9em;
+        width: 9em;
+    }
+
+    .challenge-thumb, 
+    .stellar-thumb {
+        margin-top: 5em;
+        width: 18em;
     }
 
     h2 {
