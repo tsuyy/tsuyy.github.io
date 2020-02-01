@@ -178,8 +178,8 @@ and (max-device-width : 515px) {
     }
 
     .wrap {
-        width: 21em;
-        height: 21em;
+        width: 22em;
+        height: 22em;
         margin: 0 auto;
         margin-bottom: 1.9em;
     }
@@ -201,8 +201,7 @@ and (max-device-width : 515px) {
     }
 
     h3 {
-        font-size: 1.2rem!important;
-        padding-left: 1rem;
+        font-size: 1.24rem!important;
     }
 
     h4 {
