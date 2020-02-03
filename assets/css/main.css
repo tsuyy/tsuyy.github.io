@@ -119,9 +119,13 @@ h6 {
     font-weight: 600;
 }
 
-.text-center video {
+.stellar-vid {
     margin: 6em 0 6em 0;
     box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.goodies-vid {
+    width: 36%;
 }
 
 .mrg-top-btm {
@@ -142,8 +146,12 @@ h6 {
 }
 
 .resize {
-    width: 42em;
+    width: 43.5em;
     margin: 1em 0 1em 0;
+}
+
+.img-mrg {
+    margin: 2em 0 2em 0;
 }
 
 .footer {
@@ -213,6 +221,10 @@ and (max-device-width : 515px) {
         width: 18em;
     }
 
+    .goodies-vid {
+        width: 80%;
+    }
+
     h2 {
         font-size: 1.95rem!important;
         line-height: 3rem!important;
@@ -224,6 +236,10 @@ and (max-device-width : 515px) {
 
     h4 {
         line-height: 2.5rem!important;
+    }
+
+    .project-show ul {
+        margin-left: 1.75em;
     }
 
     .footer {
