@@ -110,7 +110,7 @@ h6 {
     letter-spacing: 0.08em!important;
 }
  
-.project-show p, ul {
+.project-show p, ul, p.desc {
     line-height: 1.75em;
     letter-spacing: 0.05em;
 }
