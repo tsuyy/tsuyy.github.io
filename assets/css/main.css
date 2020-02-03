@@ -100,12 +100,6 @@ h4 .dot {
     height: 8px!important;
   }
 
-.exp ul {
-    padding-left: 1.6rem;
-    margin: 0;
-    list-style-type: circle;
-}
-
 h6 {
     letter-spacing: 0.1em;
     font-size: 0.9rem;
@@ -116,6 +110,20 @@ h6 {
     letter-spacing: 0.08em!important;
 }
  
+.project-show p, ul {
+    line-height: 1.75em;
+    letter-spacing: 0.05em;
+}
+
+.project-show h6 {
+    font-weight: 600;
+}
+
+.text-center video {
+    margin: 6em 0 6em 0;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
 .mrg-top-btm {
     margin-top: 12.5rem;
     margin-bottom: 12.5rem;
