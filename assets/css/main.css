@@ -165,11 +165,17 @@ h6 {
     margin-bottom: 4rem;
 }
 
-.footer a {
+.contact {
+    margin-bottom: 4rem;
+}
+
+.footer a,
+.contact a {
     text-decoration: none;
     color: #000;
 }
-.footer a:hover {
+.footer a:hover,
+.contact a:hover {
     color: #2fe0ac!important;
     transition: all 0.3s linear;
     cursor: pointer;
