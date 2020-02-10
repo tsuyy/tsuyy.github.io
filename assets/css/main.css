@@ -68,10 +68,12 @@ h2 {
 
 .nav-link {
     color: #000;
-    padding: .5rem 2.5rem;
     letter-spacing: 0.1em;
 }
 
+.nav-items {
+    margin-top: 2em;
+}
 
 .nav-link.active, 
 .nav-link:hover {
@@ -134,6 +136,10 @@ h6 {
     width: 36%;
 }
 
+.goodies-spread {
+    margin-bottom: 10rem;
+}
+
 .mrg-top-btm {
     margin-top: 12.5rem;
     margin-bottom: 12.5rem;
@@ -160,9 +166,14 @@ h6 {
     margin: 2em 0 2em 0;
 }
 
-.footer {
+.footer,
+.project-nav {
     margin-top: 12.5rem;
     margin-bottom: 4rem;
+}
+
+.project-nav svg {
+    vertical-align: middle!important;
 }
 
 .contact {
@@ -170,12 +181,15 @@ h6 {
 }
 
 .footer a,
-.contact a {
+.contact a,
+.project-nav a {
     text-decoration: none;
     color: #000;
 }
+
 .footer a:hover,
-.contact a:hover {
+.contact a:hover,
+.project-nav a:hover {
     color: #2fe0ac!important;
     transition: all 0.3s linear;
     cursor: pointer;
@@ -193,6 +207,7 @@ and (max-device-width : 515px) {
     .shadow-onscroll {
         background-color: white;
         transition: all 0.2s linear;
+        height: 4.5em;
     }
 
     .shadow-onscroll.active {
@@ -203,8 +218,17 @@ and (max-device-width : 515px) {
         width: 65px!important;
     }
 
+    .nav-items {
+        margin-top: 1.5em;
+    }
     .nav-link {
-        padding: 0 1.5rem!important;
+        padding: 0.9rem!important;
+        display: inline;
+        font-size: 1em;
+    }
+
+    .navbar-brand {
+        margin-right: 0em!important;
     }
 
     .mobile-br {
@@ -213,6 +237,11 @@ and (max-device-width : 515px) {
 
     .mobile-hr {
         display: block;
+    }
+
+    .mrg-top-btm {
+        margin-top: 12.5rem;
+        margin-bottom: 8.5rem!important;
     }
 
     .wrap {

@@ -10,6 +10,12 @@ $( document ).ready(function() {
         }
     });
 
+    // toggle active
+    $(document).on('click', '.nav-items a', function() {
+        $(".nav-items a").removeClass("active");
+        $(this).addClass("active");
+    });
+
     // changing colors based on mousemove
     // var $win = $(window),
     // w = 0,h = 0,
