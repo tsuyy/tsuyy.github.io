@@ -17,7 +17,7 @@ $( document ).ready(function() {
     });
 
     $(document).ready(function() {
-		$('a[href*=#]').bind('click', function(e) {
+		$('a[href*=\\#]').bind('click', function(e) {
 				e.preventDefault(); // prevent hard jump, the default behavior
 
 				var target = $(this).attr("href"); // Set the target as variable
