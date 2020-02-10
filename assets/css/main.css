@@ -7,7 +7,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all .1s ease; 
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 h2 {
     line-height: 3.75rem!important;
@@ -69,6 +74,9 @@ h2 {
 .nav-link {
     color: #000;
     letter-spacing: 0.1em;
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out;
 }
 
 .nav-items {
@@ -221,6 +229,7 @@ and (max-device-width : 515px) {
     .nav-items {
         margin-top: 1.5em;
     }
+
     .nav-link {
         padding: 0.9rem!important;
         display: inline;
