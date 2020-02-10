@@ -280,10 +280,6 @@ and (max-device-width : 515px) {
         line-height: 3rem!important;
     }
 
-    h3 {
-        font-size: 1.24rem!important;
-    }
-
     h4 {
         line-height: 2.5rem!important;
     }
@@ -292,7 +288,7 @@ and (max-device-width : 515px) {
         margin-left: 1.75em;
     }
 
-    .name, .contact {
+    .name, .contact, h3 {
         font-size: 1.7rem!important;
     }
 
