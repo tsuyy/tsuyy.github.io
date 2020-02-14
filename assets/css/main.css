@@ -234,6 +234,7 @@ and (max-device-width : 515px) {
 
     .navbar-brand {
         margin-right: 0em!important;
+        width: 3em!important;
     }
 
     .mobile-br {
@@ -244,8 +245,8 @@ and (max-device-width : 515px) {
         display: block;
     }
 
-    .mrg-top-btm {
-        margin-top: 12.5rem;
+    .mrg-top-btm, .about-mrg {
+        margin-top: 8.5rem!important;
         margin-bottom: 8.5rem!important;
     }
 
@@ -305,7 +306,7 @@ and (max-device-width : 515px) {
     }
 
     .footer {
-        margin-top: 12.5rem;
+        margin-top: 8rem;
         margin-bottom: 2rem;
     }
 
