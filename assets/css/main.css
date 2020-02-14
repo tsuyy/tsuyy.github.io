@@ -245,9 +245,10 @@ and (max-device-width : 515px) {
         display: block;
     }
 
-    .mrg-top-btm, .about-mrg {
-        margin-top: 8.5rem!important;
-        margin-bottom: 8.5rem!important;
+    .mrg-top-btm, 
+    .about-mrg {
+        margin-top: 5rem!important;
+        margin-bottom: 5rem!important;
     }
 
     .wrap {
