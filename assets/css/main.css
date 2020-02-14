@@ -66,6 +66,10 @@ h2 {
     width: 8em;
 }
 
+.navbar-brand {
+    width: 6em;
+}
+
 .nav-items {
     margin-top: 2em;
 }
@@ -136,12 +140,17 @@ h6 {
 }
 
 .mrg-top-btm {
-    margin-top: 12.5rem;
-    margin-bottom: 12.5rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
 .mrg-btm {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
+}
+
+.about-mrg {
+    margin-top: 1rem;
+    margin-bottom: 8rem;
 }
 
 .mobile-hr {
@@ -163,7 +172,7 @@ h6 {
 
 .footer,
 .project-nav {
-    margin-top: 12.5rem;
+    margin-top: 8rem;
     margin-bottom: 4rem;
 }
 
