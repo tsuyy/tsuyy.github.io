@@ -1,127 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Yvonne Tsu</title>
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- custom CSS -->
-        <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-    </head>
-    <body>
-        <header>
-            <nav class="nav flex-column fixed-top shadow-onscroll">
-                <a class="navbar-brand" href="/">
-                    <img src="assets/images/logo-01.png" alt="logo" class="logo">
-                </a>
-                <div class="nav-items">
-                    <a class="nav-link" href="/#about">ABOUT</a>
-                    <a class="nav-link" href="/#projects">PROJECTS</a>
-                    <a class="nav-link" href="/#resume">RESUME</a>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="container project-show">
-                <div class="row justify-content-center"> 
-                    <div class="col-md-10"> 
-                        <h3 class="mrg-top-btm">
-                            Stellar is a social media web application that helps users to determine when and where is most optimal for stargazing.
-                        </h3>
-                        <div class="text-center mrg-top-btm">
-                            <img src="assets/images/stellar-browser.png" class="img-fluid" alt="setllar" />
-                        </div>
-                    </div> 
-                </div>
-                <div class="row justify-content-center"> 
-                    <div class="col-md-8 mrg-btm"> 
-                        <h6>OVERVIEW</h6>
-                        <p>
-                            I used a third party weather API to query the search and the geolocation using ajax request.
-                            In response, it displays the moon cycle of the day, cloud coverage and the temperature of the location.
-                            Users are also able to upload astrophotography and the location of the photographs they uploaded will render in a modal using Google Maps API.
-                        </p><br class="hide"/>
-                        <hr class="mobile-hr"/>
-                        <h6>KEY FEATURES</h6>
-                        <p>
-                            <b>Search</b> for the weather condition of any location using search input or user's geolocation.<br/>
-                            <b>Weather forecast</b> displaying the moon cycle, temperature, cloud coverage and light pollution map.<br/>
-                            <b>Share</b> - users are able to sign up and share stargazing photographs.<br/>
-                            <b>Socialize</b> - users are also able to comment on other user's images.
-                        </p>
-                        <p>Based on these features, I made the wireframes with Balsamiq.</p>
-                    </div> 
-                    <div class="col-md-2 mrg-btm"> 
-                        <hr class="mobile-hr"/>
-                        <h6>ROLE</h6>
-                        <p>Wireframing<br />Visual design<br/>Full-stack web development</p>
-                        <hr/>
-                        <h6>TIMELINE</h6>
-                        <p>4 Week Sprint<br/>Apr 2017</p>
-                        <hr/>
-                        <h6>TECHNOLOGY</h6>
-                        <p>Ruby on Rails<br/>HTML / CSS / JS / jQuery<br/>Semantic UI<br/>PostgreSQL<br/>Illustrator / Photoshop<br/>Balsamiq<br/>AccuWeather API</p>
-                    </div> 
-                </div>
-                <div class="row justify-content-center">  
-                    <div class="col-md-10 mrg-btm">
-                        <hr class="mobile-hr"/>
-                        <h6>WIREFRAMES</h6>
-                        <div class="text-center">
-                            <img src="assets/images/stellar-wireframe.png" class="img-fluid" alt="stellar-wireframes" />
-                        </div>
-                        <br class="hide"/><br class="hide"/><br class="hide"/>
-                        <hr class="mobile-hr"/>
-                        <h6>DESIGN ELEMENTS</h6>
-                        <ul class="ul-mrg">
-                            <li><span>Time lapse of night sky —</span> full screen video backdrop as landing page.</li>
-                            <li><span>Parallax scrolling —</span> using z-index to create a 3D scrolling effect.</li>
-                            <li><span>Modal —</span> full screen modal is prompted after clicking on the location of any uploaded images.</li>
-                            <li><span>Moon phases —</span> the moon cycle displayed in the forecast is created using Moon Phases typeface.</li>
-                        </ul>
-                        <div class="text-center">
-                            <video width="800" controls class="img-fluid stellar-vid">
-                                <source src="assets/images/stellar-vid.mov" type="video/mp4">
-                            </video>
-                        </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yvonne Tsu</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav flex-column fixed-top shadow-onscroll">
+            <a class="navbar-brand" href="/">
+                <img src="assets/images/logo-01.png" alt="logo" class="logo">
+            </a>
+            <div class="nav-items">
+                <a class="nav-link" href="/#about">ABOUT</a>
+                <a class="nav-link" href="/#projects">PROJECTS</a>
+                <a class="nav-link" href="/#resume">RESUME</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container project-show">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h3 class="mrg-top-btm">
+                        Stellar is a social media web application that helps users to determine when and where is most
+                        optimal for stargazing.
+                    </h3>
+                    <div class="text-center mrg-top-btm">
+                        <img src="assets/images/stellar-browser.png" class="img-fluid" alt="setllar" />
                     </div>
                 </div>
-                <div class="row justify-content-center">  
-                    <div class="col-md-10">
-                        <h3 class="project-nav d-flex justify-content-between">
-                            <a href="/">
-                                <svg class="bi bi-arrow-left" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M7.854 6.646a.5.5 0 010 .708L5.207 10l2.647 2.646a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z" clip-rule="evenodd"></path>
-                                    <path fill-rule="evenodd" d="M4.5 10a.5.5 0 01.5-.5h10.5a.5.5 0 010 1H5a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path>
-                                </svg>
-                                back
-                            </a>
-                            <a href="/goodies">
-                                goodies  
-                                <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M12.146 6.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L14.793 10l-2.647-2.646a.5.5 0 010-.708z" clip-rule="evenodd"></path>
-                                    <path fill-rule="evenodd" d="M4 10a.5.5 0 01.5-.5H15a.5.5 0 010 1H4.5A.5.5 0 014 10z" clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
-                        </h3>
-                    </div> 
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 mrg-btm">
+                    <h6>OVERVIEW</h6>
+                    <p>
+                        This is a personal project from when I did the full stack web development boot camp at
+                        General Assembly SF. I used a third party weather API to query the search and the geolocation
+                        using ajax request. In response, it displays the moon cycle of the day, cloud coverage and the
+                        temperature of the location. Users are also able to upload astrophotography and the location of
+                        the photographs they uploaded will render in a modal using Google Maps API.
+                    </p><br class="hide" />
+                    <hr class="mobile-hr" />
+                    <h6>KEY FEATURES</h6>
+                    <ul class="ul-mrg">
+                        <li><b>Search</b> for the weather condition of any location using search input or user's
+                            geolocation.</li>
+                        <li><b>Weather forecast</b> displaying the moon cycle, temperature, cloud coverage and light
+                            pollution map.</li>
+                        <li><b>Share</b> - users are able to sign up and share stargazing photographs.</li>
+                        <li><b>Socialize</b> - users are also able to comment on other user's images.</li>
+                    </ul>
+                    <p>Based on these features, I made the wireframes with Balsamiq.</p>
+                </div>
+                <div class="col-md-2 mrg-btm">
+                    <hr class="mobile-hr" />
+                    <h6>ROLE</h6>
+                    <p>Wireframing<br />Visual design<br />Full-stack web development</p>
+                    <hr />
+                    <h6>TIMELINE</h6>
+                    <p>4 Week Sprint<br />Apr 2017</p>
+                    <hr />
+                    <h6>TECHNOLOGY</h6>
+                    <p>Ruby on Rails<br />HTML / CSS / JS / jQuery<br />Semantic UI<br />PostgreSQL<br />Illustrator /
+                        Photoshop<br />Balsamiq<br />AccuWeather API</p>
                 </div>
             </div>
-        </main>
-        <!-- bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <!-- clipboard.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
-        <!-- custom js -->
-        <script type="text/javascript" src="assets/scripts/main.js"></script>
-    </body>
+            <div class="row justify-content-center">
+                <div class="col-md-10 mrg-btm">
+                    <hr class="mobile-hr" />
+                    <h6>WIREFRAMES</h6>
+                    <div class="text-center">
+                        <img src="assets/images/stellar-wireframe.png" class="img-fluid" alt="stellar-wireframes" />
+                    </div>
+                    <br class="hide" /><br class="hide" /><br class="hide" />
+                    <hr class="mobile-hr" />
+                    <h6>DESIGN ELEMENTS</h6>
+                    <ul class="ul-mrg">
+                        <li><span>Time lapse of night sky —</span> full screen video backdrop as landing page.</li>
+                        <li><span>Parallax scrolling —</span> using z-index to create a 3D scrolling effect.</li>
+                        <li><span>Modal —</span> full screen modal is prompted after clicking on the location of any
+                            uploaded images.</li>
+                        <li><span>Moon phases —</span> the moon cycle displayed in the forecast is created using Moon
+                            Phases typeface.</li>
+                    </ul>
+                    <div class="text-center">
+                        <video width="800" controls class="img-fluid stellar-vid">
+                            <source src="assets/images/stellar-vid.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h3 class="project-nav d-flex justify-content-between">
+                        <a href="/">
+                            <svg class="bi bi-arrow-left" width="1em" height="1em" viewBox="0 0 20 20"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.854 6.646a.5.5 0 010 .708L5.207 10l2.647 2.646a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z"
+                                    clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd"
+                                    d="M4.5 10a.5.5 0 01.5-.5h10.5a.5.5 0 010 1H5a.5.5 0 01-.5-.5z" clip-rule="evenodd">
+                                </path>
+                            </svg>
+                            back
+                        </a>
+                        <a href="/goodies">
+                            goodies
+                            <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 20 20"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M12.146 6.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L14.793 10l-2.647-2.646a.5.5 0 010-.708z"
+                                    clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd" d="M4 10a.5.5 0 01.5-.5H15a.5.5 0 010 1H4.5A.5.5 0 014 10z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- clipboard.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
+</body>
+
 </html>

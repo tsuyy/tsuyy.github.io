@@ -1,86 +1,89 @@
-$( document ).ready(function() {
-    // on scroll shadow for mobile
-    $(window).scroll(function() {     
-        var scroll = $(window).scrollTop();
-        if (scroll > 0) {
-            $(".shadow-onscroll").addClass("active");
-        }
-        else {
-            $(".shadow-onscroll").removeClass("active");
-        }
-    });
+$(document).ready(function() {
+        // on scroll shadow for mobile
+        $(window).scroll(function() {
+                const scroll = $(window).scrollTop();
+                if (scroll > 0) {
+                        $('.shadow-onscroll').addClass('active');
+                } else {
+                        $('.shadow-onscroll').removeClass('active');
+                }
+        });
 
-    // toggle active on click
-    $(document).on('click', '.nav-items a', function() {
-        $(".nav-items a").removeClass("active");
-        $(this).addClass("active");
-    });
+        // toggle active on click
+        $(document).on('click', '.nav-items a', function() {
+                $('.nav-items a').removeClass('active');
+                $(this).addClass('active');
+        });
 
-    $(document).ready(function() {
-		$('a[href*=#]').bind('click', function(e) {
-				e.preventDefault(); // prevent hard jump, the default behavior
+        $(document).ready(function() {
+                $('a[href*=#]').bind('click', function(e) {
+                        e.preventDefault(); // prevent hard jump, the default behavior
 
-				var target = $(this).attr("href"); // Set the target as variable
+                        const target = $(this).attr('href'); // Set the target as variable
 
-				// perform animated scrolling by getting top-position of target-element and set it as scroll target
-				$('html, body').stop().animate({
-						scrollTop: $(target).offset().top
-				}, 600, function() {
-						location.hash = target; //attach the hash (#jumptarget) to the pageurl
-				});
+                        // perform animated scrolling by getting top-position of target-element and set it as scroll target
+                        $('html, body')
+                                .stop()
+                                .animate(
+                                        {
+                                                scrollTop: $(target).offset().top,
+                                        },
+                                        600,
+                                        function() {
+                                                // eslint-disable-next-line no-restricted-globals
+                                                location.hash = target; // attach the hash (#jumptarget) to the pageurl
+                                        }
+                                );
 
-				return false;
-		});
-    });
+                        return false;
+                });
+        });
 
-    $(window).scroll(function() {
-            var scrollDistance = $(window).scrollTop();
-        
-            // Assign active class to nav links while scolling
-            $('.page-section').each(function(i) {
-                    if ($(this).position().top <= scrollDistance) {
-                            $('.nav-items a.active').removeClass('active');
-                            $('.nav-items a').eq(i).addClass('active');
-                    }
-            });
-    }).scroll();
+        $(window)
+                .scroll(function() {
+                        const scrollDistance = $(window).scrollTop();
 
-    // changing colors based on mousemove
-    // var $win = $(window),
-    // w = 0,h = 0,
-    // rgb = [],
-    // getWidth = function() {
-    //     w = $win.width();
-    //     h = $win.height();
-    // };
+                        // Assign active class to nav links while scolling
+                        $('.page-section').each(function(i) {
+                                if ($(this).position().top <= scrollDistance) {
+                                        $('.nav-items a.active').removeClass('active');
+                                        $('.nav-items a')
+                                                .eq(i)
+                                                .addClass('active');
+                                }
+                        });
+                })
+                .scroll();
 
-    // $win.resize(getWidth).mousemove(function(e) {
-        
-    //     rgb = [
-    //         Math.round(e.pageX/w * 255),
-    //         Math.round(e.pageY/h * 255),
-    //         180
-    //     ];
-        
-    //     $('span.dot').css({"background-color": 'rgb('+rgb.join(',')+')'});
-       
-    // }).resize();
+        // random bg color on hover
+        const colors = ['#DDF9EF', '#BFCDE0', '#dce8f4', '#FFF5C6', '#EAE8FF', '#dce8f4', '#d8d5e7'];
+        $('.wrap').hover(
+                function() {
+                        // eslint-disable-next-line no-bitwise
+                        $(this).css('background-color', colors[(Math.random() * colors.length) | 0]);
+                },
+                function() {
+                        $(this).css('background-color', '');
+                }
+        );
 
-    // clipboard.js
-    var clipboard = new ClipboardJS('.clipboard');
+        // clipboard.js
+        // eslint-disable-next-line no-undef
+        const clipboard = new ClipboardJS('.clipboard');
 
-    clipboard.on('success', function(e) {
-        console.log('copied!');
-        $('#copy').popover('toggle');
-    });
+        clipboard.on('success', function(e) {
+                // eslint-disable-next-line no-console
+                console.log('copied!');
+                $('#copy').popover('toggle');
+        });
 
-    clipboard.on('error', function(e) {
-        console.log(e);
-    });
+        clipboard.on('error', function(e) {
+                // eslint-disable-next-line no-console
+                console.log(e);
+        });
 
-    // popover
-    $('.popover-dismiss').popover({
-        trigger: 'focus'
-      })
-
-  });
+        // popover
+        $('.popover-dismiss').popover({
+                trigger: 'focus',
+        });
+});

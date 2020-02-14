@@ -46,25 +46,11 @@ h2 {
     height: 425px;
     width: 425px;
     overflow: hidden;
-    display: flex;
     border-radius: 3.5%;
     margin-bottom: 1.5em;
-}
-
-.goodies-wrap {
-    background-color: #DDF9EF;
-}
-
-.stentor-wrap {
-    background-color: #d8d5e7;
-}
-
-.cc-wrap {
-    background-color: #dce8f4;
-}
-
-.stellar-wrap {
-    background-color: #dfddda;
+    display: flex;
+    position: relative;
+    background-color: #f2f2f2;
 }
 
 .logo {
@@ -274,6 +260,22 @@ and (max-device-width : 515px) {
     .goodies-vid {
         width: 80%;
     }
+
+    .goodies-wrap {
+    background-color: #DDF9EF!important;
+    }
+
+    .stentor-wrap {
+        background-color: #d8d5e7!important;
+    }
+
+    .cc-wrap {
+        background-color: #dce8f4!important;
+    }
+
+    .stellar-wrap {
+        background-color: #dfddda!important;
+    } 
 
     h2 {
         font-size: 1.95rem!important;
