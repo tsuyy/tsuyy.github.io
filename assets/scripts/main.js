@@ -56,7 +56,7 @@ $(document).ready(function() {
                 .scroll();
 
         // random bg color on hover
-        const colors = ['#DDF9EF', '#BFCDE0', '#dce8f4', '#FFF5C6', '#EAE8FF', '#dce8f4', '#d8d5e7'];
+        const colors = ['#DDF9EF', '#BFCDE0', '#dce8f4', '#FFF5C6', '#EAE8FF', '#dce8f4', '#d8d5e7', '#E8FFEE'];
         $('.wrap').hover(
                 function() {
                         // eslint-disable-next-line no-bitwise
