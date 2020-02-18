@@ -128,11 +128,15 @@ h6 {
 }
 
 .goodies-vid {
-    width: 36%;
+    width: 30%;
 }
 
 .goodies-spread {
     margin-bottom: 10rem;
+}
+
+.goodies-media-wrap {
+    display: flex;
 }
 
 .mrg-top-btm {
