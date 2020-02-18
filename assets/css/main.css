@@ -14,10 +14,6 @@ html {
     scroll-behavior: smooth;
   }
 
-h2 {
-    line-height: 3.75rem!important;
-}
-
 .goodies-thumb {
     width: 11.5em;
     margin-top: 1.9em;
@@ -246,10 +242,15 @@ and (max-device-width : 515px) {
         display: block;
     }
 
-    .mrg-top-btm, 
-    .about-mrg {
+    .mrg-top-btm {
         margin-top: 5rem!important;
         margin-bottom: 5rem!important;
+    }
+
+    .about-mrg {
+        margin-top: 7rem!important;
+        margin-bottom: 7rem!important;
+         line-height: 2.8rem!important;
     }
 
     .wrap {
@@ -289,11 +290,6 @@ and (max-device-width : 515px) {
     .stellar-wrap {
         background-color: #dfddda!important;
     } 
-
-    h2 {
-        font-size: 1.95rem!important;
-        line-height: 3rem!important;
-    }
 
     h4 {
         line-height: 2.5rem!important;
