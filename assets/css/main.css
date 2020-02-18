@@ -149,8 +149,9 @@ h6 {
 }
 
 .about-mrg {
-    margin-top: 1rem;
-    margin-bottom: 8rem;
+    margin-top: 7.3rem;
+    margin-bottom: 12rem;
+    line-height: 1.75em;
 }
 
 .mobile-hr {
