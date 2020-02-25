@@ -59,7 +59,6 @@ $(document).ready(function() {
         const colors = ['#DDF9EF', '#BFCDE0', '#dce8f4', '#FFF5C6', '#EAE8FF', '#dce8f4', '#d8d5e7', '#E8FFEE'];
         $('.wrap').hover(
                 function() {
-                        // eslint-disable-next-line no-bitwise
                         $(this).css('background-color', colors[(Math.random() * colors.length) | 0]);
                 },
                 function() {
@@ -68,17 +67,14 @@ $(document).ready(function() {
         );
 
         // clipboard.js
-        // eslint-disable-next-line no-undef
         const clipboard = new ClipboardJS('.clipboard');
 
         clipboard.on('success', function(e) {
-                // eslint-disable-next-line no-console
                 console.log('copied!');
                 $('#copy').popover('toggle');
         });
 
         clipboard.on('error', function(e) {
-                // eslint-disable-next-line no-console
                 console.log(e);
         });
 
