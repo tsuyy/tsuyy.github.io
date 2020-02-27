@@ -281,8 +281,7 @@ and (max-device-width : 515px) {
     }
 
     .goodies-vid {
-        object-fit: fill;
-        width: 70%;
+        object-fit: contain;
     }
 
     .goodies-wrap {
