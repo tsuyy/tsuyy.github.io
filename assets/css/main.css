@@ -282,6 +282,7 @@ and (max-device-width : 515px) {
 
     .goodies-vid {
         width: 80%!important;
+        height: auto;
     }
 
     .goodies-wrap {

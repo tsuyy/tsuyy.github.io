@@ -1,3 +1,7 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-bitwise */
+/* eslint-disable no-console */
+
 $(document).ready(function() {
         // on scroll shadow for mobile
         $(window).scroll(function() {
