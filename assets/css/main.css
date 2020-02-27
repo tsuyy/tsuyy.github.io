@@ -282,11 +282,10 @@ and (max-device-width : 515px) {
 
     .goodies-vid {
         width: 50%!important;
-        height: 345px;
     }
 
     .goodies-wrap {
-    background-color: #DDF9EF!important;
+        background-color: #DDF9EF!important;
     }
 
     .stentor-wrap {
