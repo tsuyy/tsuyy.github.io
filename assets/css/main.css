@@ -135,10 +135,6 @@ h6 {
     margin-bottom: 10rem;
 }
 
-.goodies-media-wrap {
-    display: flex;
-}
-
 .mrg-top-btm {
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -279,13 +275,13 @@ and (max-device-width : 515px) {
         margin-top: 5em;
         width: 18em;
     }
+    
+    .goodies-media-wrap {
+        height: 670px;
+    }
 
     .goodies-vid {
-<<<<<<< HEAD
-        width: 50%!important;
-=======
-        width: 80%;
->>>>>>> parent of 9ce5c01... updates
+        width: 80%!important;
     }
 
     .goodies-wrap {
