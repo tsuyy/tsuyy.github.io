@@ -278,6 +278,11 @@ and (max-device-width : 515px) {
         margin-top: 1.9em;
         width: 9em;
     }
+
+    .cs-thumb {
+        margin-top: 4em;
+        width: 19em;
+    }
  
     .stellar-thumb {
         margin-top: 5em;
