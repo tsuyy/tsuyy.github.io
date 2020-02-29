@@ -18,11 +18,15 @@ html {
     width: 11.5em;
     margin-top: 1.9em;
 }
-
-.challenge-thumb, 
+ 
 .stellar-thumb {
     margin-top: 6.8em;
     width: 23em;
+}
+
+.cs-thumb {
+    margin-top: 5em;
+    width: 22em;
 }
 
 .project-thumb {
@@ -172,6 +176,11 @@ h6 {
     margin-bottom: 3.5rem;
 }
 
+.content-mrg {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .footer,
 .project-nav {
     margin-top: 8rem;
@@ -269,8 +278,7 @@ and (max-device-width : 515px) {
         margin-top: 1.9em;
         width: 9em;
     }
-
-    .challenge-thumb, 
+ 
     .stellar-thumb {
         margin-top: 5em;
         width: 18em;
