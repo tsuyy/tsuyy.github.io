@@ -297,22 +297,6 @@ and (max-device-width : 515px) {
         width: 80%!important;
     }
 
-    .goodies-wrap {
-        background-color: #DDF9EF!important;
-    }
-
-    .stentor-wrap {
-        background-color: #d8d5e7!important;
-    }
-
-    .cc-wrap {
-        background-color: #dce8f4!important;
-    }
-
-    .stellar-wrap {
-        background-color: #dfddda!important;
-    } 
-
     h4 {
         line-height: 2.5rem!important;
     }
