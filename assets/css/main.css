@@ -12,7 +12,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 .goodies-thumb {
     width: 11.5em;
@@ -99,7 +99,7 @@ h4 .dot {
     background-color: #2fe0ac!important;
     width: 8px!important;
     height: 8px!important;
-  }
+}
 
 h6 {
     letter-spacing: 0.1em;
@@ -317,7 +317,8 @@ and (max-device-width : 515px) {
     .footer a,
     .contact a {
         color: #2fe0ac!important;
-} 
+    }
+}    
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
