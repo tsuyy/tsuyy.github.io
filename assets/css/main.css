@@ -14,6 +14,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.eos-thumb {
+    width: 18em;
+    margin-top: 2.3em;
+}
+
+.wts-thumb {
+    width: 23em;
+    margin-top: 1.8em;
+}
+
 .goodies-thumb {
     width: 11.5em;
     margin-top: 1.9em;
@@ -42,7 +52,7 @@ html {
     border-radius: 5%;
 }
 
-.wrap {
+.wrap, .wts-wrap {
     height: 425px;
     width: 425px;
     overflow: hidden;
@@ -50,7 +60,11 @@ html {
     margin-bottom: 1.5em;
     display: flex;
     position: relative;
-    background-color: #f2f2f2;
+    background-color: #eff0f3;
+}
+
+.wts-wrap:hover {
+    background-color: #f7f7f9;
 }
 
 .logo {
@@ -120,6 +134,14 @@ h6 {
     font-weight: 600;
 }
 
+.project-show h3 {
+    letter-spacing: 0.02em;
+}
+
+.p0 {
+    top: -1.4em;
+}
+
 .stellar-vid {
     margin: 6em 0 3em 0;
     box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.1);
@@ -165,6 +187,10 @@ h6 {
 .resize {
     width: 43.5em;
     margin: 1em 0 1em 0;
+}
+
+.wts-resize {
+    width: 32em;
 }
 
 .img-mrg {
@@ -267,13 +293,21 @@ and (max-device-width : 515px) {
          line-height: 2.8rem!important;
     }
 
-    .wrap {
+    .wrap, .wts-wrap {
         width: 22em;
         height: 22em;
         margin: 0 auto;
         margin-bottom: 1.9em;
     }
 
+    .wts-thumb {
+        width: 18em;
+    }
+
+    .eos-thumb {
+        width: 15em;
+    }
+    
     .goodies-thumb {
         margin-top: 1.9em;
         width: 9em;
@@ -303,6 +337,10 @@ and (max-device-width : 515px) {
 
     .project-show ul {
         margin-left: 1.75em;
+    }
+    
+    .p0 {
+       top: 0em;
     }
 
     .name, .contact, h3 {
@@ -374,4 +412,4 @@ and (min-width : 1224px) {
 @media only screen 
 and (min-width : 1824px) {
 
-}}
+}

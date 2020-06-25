@@ -60,7 +60,7 @@ $(document).ready(function() {
                 .scroll();
 
         // random bg color on hover
-        const colors = ['#DDF9EF', '#BFCDE0', '#dce8f4', '#FFF5C6', '#EAE8FF', '#dce8f4', '#d8d5e7', '#E8FFEE'];
+        const colors = ['#DDF9EF', '#BFCDE0', '#dce8f4', '#FFF5C6', '#EAE8FF', '#dce8f4', '#d8d5e7', '#E8FFEE', '#fff1db'];
         $('.wrap').hover(
                 function() {
                         $(this).css('background-color', colors[(Math.random() * colors.length) | 0]);
@@ -86,4 +86,17 @@ $(document).ready(function() {
         $('.popover-dismiss').popover({
                 trigger: 'focus',
         });
+
+        $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        $('.eos-wrap').on('mouseenter', function(e) {
+                ('[data-toggle="tooltip"]').tooltip('show')
+        });
+
+        $('.eos-wrap').on('mouseleave', function(e) {
+                ('[data-toggle="tooltip"]').tooltip('hide')
+        });
+
 });
