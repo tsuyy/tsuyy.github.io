@@ -356,6 +356,11 @@ and (max-device-width : 515px) {
     .contact a {
         color: #2fe0ac!important;
     }
+
+    iframe {
+        width: 345px!important;
+        height: 200px!important;
+    }
 }    
 
 /* iPads (portrait and landscape) ----------- */
