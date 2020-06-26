@@ -75,28 +75,21 @@ $(document).ready(function() {
 
         clipboard.on('success', function(e) {
                 console.log('copied!');
-                $('#copy').popover('toggle');
+                $('#copy').tooltip('show');
         });
 
         clipboard.on('error', function(e) {
                 console.log(e);
         });
 
-        // popover
-        $('.popover-dismiss').popover({
-                trigger: 'focus',
-        });
 
-        $(function () {
-                $('[data-toggle="tooltip"]').tooltip()
-        });
-
+        // tooltip
         $('.eos-wrap').on('mouseenter', function(e) {
-                ('[data-toggle="tooltip"]').tooltip('show')
+                $('#eos').tooltip('show');
         });
 
         $('.eos-wrap').on('mouseleave', function(e) {
-                ('[data-toggle="tooltip"]').tooltip('hide')
+                $('#eos').tooltip('hide');
         });
 
 });
