@@ -105,7 +105,10 @@ html {
   }
 
 .serif {
-    font-family: 'Rufina', serif;
+    /* font-family: 'Rufina', serif; */
+    font-family: lemonde-journal, serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h4 .dot {
@@ -134,7 +137,11 @@ h6 {
     font-weight: 600;
 }
 
-.project-show h3 {
+.project-show h3, 
+.exp h4,
+.edu h4,
+.sk h4,
+.about-mrg {
     letter-spacing: 0.02em;
 }
 
@@ -176,7 +183,8 @@ h6 {
     line-height: 1.75em;
 }
 
-.mobile-hr {
+.mobile-hr,
+.mobile-br {
     display: none;
 }
 
