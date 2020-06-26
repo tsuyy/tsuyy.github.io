@@ -141,7 +141,8 @@ h6 {
 .exp h4,
 .edu h4,
 .sk h4,
-.about-mrg {
+.about-mrg,
+.footer a {
     letter-spacing: 0.02em;
 }
 
