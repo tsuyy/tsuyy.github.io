@@ -59,10 +59,10 @@ $(document).ready(function() {
                 })
                 .scroll();
 
-        // random bg color on hover
-        const colors = ['#DDF9EF', '#BFCDE0', '#dce8f4', '#FFF5C6', '#EAE8FF', '#dce8f4', '#d8d5e7', '#E8FFEE', '#fff1db'];
+        // loop array of colors on hover
+        const colors = ['#fff5f5', '#fff6e8', '#fff9db', '#f0fffa', '#ebf5ff', '#f1f0ff'];
         $('.wrap').hover(
-                function() {
+                function() {         
                         $(this).css('background-color', colors[(Math.random() * colors.length) | 0]);
                 },
                 function() {
