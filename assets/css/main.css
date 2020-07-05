@@ -375,13 +375,46 @@ and (max-device-width : 1024px) {
         width: 70px;
     }
 
-    .shadow-onscroll {
-        background-color: white;
-        transition: all 0.2s linear;
+    .container {
+        margin-left: 5em;
     }
 
-    .shadow-onscroll.active {
-        box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.1);
+    .tb-hide {
+        display: none;
+    }
+
+    .about-mrg {
+        margin-bottom: 6rem;
+        line-height: 1.75em;
+    }
+
+    .wrap {
+        height: 280px;
+        width: 280px;
+    }
+
+    .wts-thumb {
+        width: 15em;
+        margin-top: 1.2em;
+    }
+
+    .eos-thumb {
+        width: 12em;
+    }
+
+    .goodies-thumb {
+        width: 7.5em;
+        margin-top: 1.2em;
+    }
+
+    .cs-thumb {
+        width: 15em;
+        margin-top: 3.2em;
+    }
+
+    .stellar-thumb {
+        margin-top: 4.2em;
+        width: 16em;
     }
 
     .tablet-br {
@@ -391,7 +424,12 @@ and (max-device-width : 1024px) {
     .dot {
         height: 4px;
         width: 4px;
-      }
+    }
+      
+    .footer a,
+    .contact a {
+        color: #662af2!important;
+    }
 }
 
 /* iPads (landscape) ----------- */
@@ -404,10 +442,38 @@ and (orientation : landscape) {
 
 /* iPads (portrait) ----------- */
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+and (min-device-width : 1024px) 
 and (orientation : portrait) {
 
+    .container {
+        margin-left: 4em;
+    }
+
+    .wrap {
+        height: 360px;
+        width: 360px;
+    }
+
+    .wts-thumb {
+        width: 19em;
+    }
+
+    .eos-thumb {
+        width: 16em;
+    }
+
+    .goodies-thumb {
+        width: 9.5em;
+    }
+
+    .cs-thumb {
+        width: 19em;
+    }
+
+    .stellar-thumb {
+        margin-top: 5.8em;
+        width: 20em;
+    }
 }
 
 /* Desktops and laptops ----------- */
