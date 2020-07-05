@@ -425,6 +425,11 @@ and (max-device-width : 1024px) {
         height: 4px;
         width: 4px;
     }
+
+    iframe {
+        width: 720px!important;
+        height: 400px!important;
+    }
       
     .footer a,
     .contact a {
