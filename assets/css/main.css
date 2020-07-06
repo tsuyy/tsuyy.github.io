@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     transition: all .1s ease; 
+    
 }
 
 html {
@@ -121,9 +122,24 @@ html {
 
 .project:hover a img,
 .project:focus a img {
-    transform: scale(1.1);
+    transform: scale(1.05);
     border-radius: 5%;
+    opacity: .9;
 }
+
+/* a.p-thumb {
+    text-decoration:none;
+    position:relative;
+    color: #000;
+}
+.p-thumb span#thumb {
+    display:none;
+}
+.p-thumb:hover span#thumb {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+} */
 
 .wrap {
     height: 425px;
@@ -134,6 +150,13 @@ html {
     display: flex;
     position: relative;
     background-color: #eff0f3;
+    transition: .3s all ease-out;
+}
+
+.wrap:hover {
+    background-color: ghostwhite;
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.05);
+
 }
 
 .logo {
@@ -183,8 +206,8 @@ html {
 h4 .dot {
     margin: 1rem;
     background-color: #662af2!important;
-    width: 8px!important;
-    height: 8px!important;
+    width: 10px!important;
+    height: 10px!important;
 }
 
 h6 {

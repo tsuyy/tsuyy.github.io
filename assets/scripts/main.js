@@ -63,15 +63,15 @@ $(document).ready(function() {
                 .scroll();
 
         // loop array of colors on hover
-        const colors = ['#fff5f5', '#fff6e8', '#fff9db', '#f0fffa', '#ebf5ff', '#f1f0ff'];
-        $('.wrap').hover(
-                function() {         
-                        $(this).css('background-color', colors[(Math.random() * colors.length) | 0]);
-                },
-                function() {
-                        $(this).css('background-color', '');
-                }
-        );
+        // const colors = ['#fff5f5', '#fff6e8', '#fff9db', '#f0fffa', '#ebf5ff', '#f1f0ff'];
+        // $('.wrap').hover(
+        //         function() {         
+        //                 $(this).css('background-color', colors[(Math.random() * colors.length) | 0]);
+        //         },
+        //         function() {
+        //                 $(this).css('background-color', '');
+        //         }
+        // );
 
         // clipboard.js
         const clipboard = new ClipboardJS('.clipboard');
@@ -108,6 +108,16 @@ $(document).ready(function() {
                 $('.mobile ul').hide();
                 $('nav').toggleClass('overlay');
         });
-        
+
+        // project thumbnail
+        // var projectThumb = document.getElementById('thumb');
+
+        // window.onmousemove = function (e) {
+        //         var x = e.clientX,
+        //             y = e.clientY;
+        //         projectThumb.style.top = (y) + 'px';
+        //         projectThumb.style.left = (x) + 'px';
+
+        // };      
 
 });
