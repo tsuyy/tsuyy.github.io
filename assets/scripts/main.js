@@ -1,8 +1,23 @@
 $(document).ready(function() {
 
+        // check screen size to show hamburger menu
+        function checkWidth() {
+                if ($(window).width() < 514) {
+                        $('nav').removeClass('flex-column').addClass('d-flex').addClass('justify-content-between').addClass('align-items-top');
+                } else {
+                        $('nav').addClass('flex-column').removeClass('justify-content-between').removeClass('align-items-top');
+                }
+        }
+        $(window).resize(checkWidth);
+
         // toggle active on click
         $(document).on('click', '.nav-items a', function() {
                 $('.nav-items a').removeClass('active');
+                $(this).addClass('active');
+        });
+
+        $(document).on('click', '.mobile ul li a', function() {
+                $('.mobile ul li a').removeClass('active');
                 $(this).addClass('active');
         });
 
@@ -78,5 +93,20 @@ $(document).ready(function() {
         $('.eos-wrap').on('mouseleave', function(e) {
                 $('#eos').tooltip('hide');
         });
+
+
+        // hamburger interaction
+        $('#hamburger').click(function(){
+                $(this).toggleClass('open');
+                $('nav').toggleClass('overlay');
+                $('.mobile ul').toggle('display');
+        });
+
+        $('.mobile ul li a').on('click', function(){
+                $('#hamburger').toggleClass('open');
+                $('.mobile ul').hide();
+                $('nav').toggleClass('overlay');
+        });
+        
 
 });
