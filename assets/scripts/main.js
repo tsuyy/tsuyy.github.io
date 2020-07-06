@@ -1,17 +1,4 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-bitwise */
-/* eslint-disable no-console */
-
 $(document).ready(function() {
-        // on scroll shadow for mobile
-        $(window).scroll(function() {
-                const scroll = $(window).scrollTop();
-                if (scroll > 0) {
-                        $('.shadow-onscroll').addClass('active');
-                } else {
-                        $('.shadow-onscroll').removeClass('active');
-                }
-        });
 
         // toggle active on click
         $(document).on('click', '.nav-items a', function() {
@@ -45,7 +32,7 @@ $(document).ready(function() {
 
         $(window)
                 .scroll(function() {
-                        const scrollDistance = $(window).scrollTop();
+                        const scrollDistance = $(window).scrollTop() + 100;
 
                         // Assign active class to nav links while scolling
                         $('.page-section').each(function(i) {

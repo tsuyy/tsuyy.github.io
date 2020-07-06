@@ -247,7 +247,7 @@ and (max-device-width : 515px) {
     .hide {
         display: none;
     }
-
+/* 
     .shadow-onscroll {
         background-color: white;
         transition: all 0.2s linear;
@@ -256,7 +256,7 @@ and (max-device-width : 515px) {
 
     .shadow-onscroll.active {
         box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.1);
-    }
+    } */
 
     .logo {
         width: 65px!important;
@@ -268,7 +268,7 @@ and (max-device-width : 515px) {
 
     .nav-link {
         padding: 0.9rem!important;
-        display: inline;
+        display: block;
         font-size: 1em;
     }
 
