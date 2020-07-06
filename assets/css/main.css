@@ -124,7 +124,6 @@ html {
 .project:focus a img {
     transform: scale(1.05);
     border-radius: 5%;
-    opacity: .9;
 }
 
 /* a.p-thumb {
