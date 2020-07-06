@@ -5,9 +5,10 @@ $(document).ready(function() {
                 if ($(window).width() < 514) {
                         $('nav').removeClass('flex-column').addClass('d-flex').addClass('justify-content-between').addClass('align-items-top');
                 } else {
-                        $('nav').addClass('flex-column').removeClass('justify-content-between').removeClass('align-items-top');
+                        $('nav').removeClass('d-flex').removeClass('justify-content-between').removeClass('align-items-top').addClass('flex-column');
                 }
         }
+        checkWidth();
         $(window).resize(checkWidth);
 
         // toggle active on click
