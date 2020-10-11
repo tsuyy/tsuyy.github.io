@@ -275,6 +275,11 @@ h6 {
     width: 30%;
 }
 
+
+.echo-vid {
+    width: 60%!important;
+}
+
 .goodies-spread {
     margin-bottom: 10rem;
 }
@@ -473,6 +478,7 @@ and (max-device-width : 515px) {
     .goodies-vid {
         width: 80%!important;
     }
+
 
     h4 {
         line-height: 2.35rem!important;
