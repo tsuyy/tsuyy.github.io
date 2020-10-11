@@ -479,6 +479,9 @@ and (max-device-width : 515px) {
         width: 80%!important;
     }
 
+    .echo-vid {
+        width: 95%!important;
+    }
 
     h4 {
         line-height: 2.35rem!important;
