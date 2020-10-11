@@ -87,7 +87,7 @@ html {
   }
 
 .echo-thumb {
-    width: 12.5em;
+    width: 12.5em!important;
     margin-top: 1.2em;
 }
 
@@ -439,7 +439,7 @@ and (max-device-width : 515px) {
     }
 
     .echo-thumb {
-        width: 10.3em;
+        width: 10.3em!important;
         margin-top: 1em;
     }
 
