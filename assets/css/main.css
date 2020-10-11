@@ -85,7 +85,11 @@ html {
     width: 0%;
     left: 50%;
   }
-  
+
+.echo-thumb {
+    width: 12.5em;
+    margin-top: 1.2em;
+}
 
 .eos-thumb {
     width: 18em;
@@ -123,6 +127,15 @@ html {
 .project:focus a img {
     transform: scale(1.05);
     border-radius: 5%;
+}
+
+.col-md-2 a {
+    color: #000;
+}
+
+.col-md-2 a:hover {
+    color: #662af2!important;
+    text-decoration-line: none;
 }
 
 /* a.p-thumb {
@@ -423,6 +436,11 @@ and (max-device-width : 515px) {
         height: 22em;
         margin: 0 auto;
         margin-bottom: 1.9em;
+    }
+
+    .echo-thumb {
+        width: 10.3em;
+        margin-top: 1em;
     }
 
     .wts-thumb {
