@@ -452,8 +452,8 @@ and (max-device-width : 515px) {
     }
 
     .wrap, .wts-wrap {
-        width: 22em;
-        height: 22em;
+        width: 21em;
+        height: 21em;
         margin: 0 auto;
         margin-bottom: 1.9em;
     }
