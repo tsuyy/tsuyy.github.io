@@ -168,16 +168,17 @@ html {
     width: 425px;
     overflow: hidden;
     border-radius: 3.5%;
-    margin-bottom: 1.5em;
+    margin: 1.5em 0;
     display: flex;
     position: relative;
-    background-color: #eff0f3;
+    background-color: rgb(248, 248, 248);
     transition: .3s all ease-out;
 }
 
 .wrap:hover {
-    background-color: ghostwhite;
-    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.05);
+    background: #eeeef7;
+    box-shadow:  7px 7px 20px #d7d7e1, 
+                 -7px -7px 20px #fdfdff;
 
 }
 
@@ -211,8 +212,8 @@ html {
 }
 
 .dot {
-    height: 7px;
-    width: 7px;
+    height: 11px;
+    width: 11px;
     background-color: #662af2;
     border-radius: 50%;
     display: inline-block;
@@ -230,8 +231,8 @@ html {
 h4 .dot {
     margin: 1rem;
     background-color: #662af2!important;
-    width: 10px!important;
-    height: 10px!important;
+    width: 11px!important;
+    height: 11px!important;
 }
 
 h4 {
@@ -366,13 +367,13 @@ h6 {
 .contact a,
 .project-nav a {
     text-decoration: none;
-    color: #000;
+    color: #662af2;
 }
 
 .footer a:hover,
 .contact a:hover,
 .project-nav a:hover {
-    color: #662af2!important;
+    color: #000!important;
     transition: all 0.3s linear;
     cursor: pointer;
 }
