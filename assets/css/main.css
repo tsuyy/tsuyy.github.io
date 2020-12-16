@@ -364,15 +364,25 @@ h6 {
 }
 
 .footer a,
-.contact a,
 .project-nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer a:hover,
+.project-nav a:hover {
+    text-decoration: none;
+    color: #662af2;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.contact a {
     text-decoration: none;
     color: #662af2;
 }
 
-.footer a:hover,
-.contact a:hover,
-.project-nav a:hover {
+.contact a:hover {
     color: #000!important;
     transition: all 0.3s linear;
     cursor: pointer;
