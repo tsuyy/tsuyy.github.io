@@ -87,8 +87,8 @@ html {
   }
 
 .echo-thumb {
-    width: 12.5em!important;
-    margin-top: 1.2em;
+    width: 8.5em!important;
+    margin-top: 1.4em;
 }
 
 .eos-thumb {
@@ -135,12 +135,14 @@ html {
 }
 
 .col-md-2 a,
-.col-md-3 a {
+.col-sm a,
+.content-mrg a {
     color: #000;
 }
 
 .col-md-2 a:hover,
-.col-md-3 a:hover {
+.col-sm a:hover,
+.content-mrg a:hover {
     color: #662af2!important;
     text-decoration-line: none;
 }
@@ -250,9 +252,10 @@ h6 {
 }
  
 .project-show p, ul, p.desc {
-    line-height: 1.75em;
+    line-height: 2.2em;
     letter-spacing: 0.05em;
     font-weight: 400;
+    font-size: 1.15em;
 }
 
 .project-show h6 {
@@ -265,7 +268,8 @@ h6 {
 .sk h4,
 .about-mrg,
 .footer a {
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
+    line-height: 1.7em;
 }
 
 .p0 {
@@ -343,6 +347,10 @@ h6 {
 .content-mrg {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.hl {
+    color: #662af2;
 }
 
 #resume {
@@ -470,7 +478,7 @@ and (max-device-width : 515px) {
     }
 
     .echo-thumb {
-        width: 10.3em!important;
+        width: 7em!important;
         margin-top: 1em;
     }
 
