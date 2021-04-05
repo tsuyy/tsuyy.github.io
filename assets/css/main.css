@@ -137,13 +137,13 @@ html {
 .col-md-2 a,
 .col-sm a,
 .content-mrg a {
-    color: #000;
+    color: #662af2;
 }
 
 .col-md-2 a:hover,
 .col-sm a:hover,
 .content-mrg a:hover {
-    color: #662af2!important;
+    color: #000!important;
     text-decoration-line: none;
 }
 
