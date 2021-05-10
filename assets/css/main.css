@@ -183,9 +183,7 @@ html {
 
 .wrap:hover {
     background: #eeeef7;
-    box-shadow:  7px 7px 20px #d7d7e1, 
-                 -7px -7px 20px #fdfdff;
-
+    box-shadow: rgba(53, 49, 68, 0.25) 0px 25px 50px -12px;
 }
 
 .logo {
