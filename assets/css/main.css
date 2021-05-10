@@ -97,8 +97,8 @@ html {
 }
 
 .wts-thumb {
-    width: 23em;
-    margin-top: 1.8em;
+    width: 25em;
+    margin-top: 4.8em;
 }
 
 .goodies-thumb {
@@ -489,7 +489,8 @@ and (max-device-width : 515px) {
     }
 
     .wts-thumb {
-        width: 18em;
+        width: 24em;
+        margin-top: 5.5em;
     }
 
     .eos-thumb {
@@ -585,8 +586,8 @@ and (max-device-width : 1024px) {
     }
 
     .wts-thumb {
-        width: 15em;
-        margin-top: 1.2em;
+        width: 20em;
+        margin-top: 4em;
     }
 
     .eos-thumb {
@@ -650,20 +651,29 @@ and (orientation : portrait) {
         width: 360px;
     }
 
-    .wts-thumb {
-        width: 19em;
+    .salus-thumb {
+        width: 25em!important;
+        margin-top: 3.3em;
     }
 
-    .eos-thumb {
-        width: 16em;
+    .wts-thumb {
+        width: 20em;
+        margin-top: 5em;
+    }
+
+    .echo-thumb {
+        width: 7.5em!important;
+        margin-top: 1em;
     }
 
     .goodies-thumb {
         width: 9.5em;
+        margin-top: 1.7em;
     }
 
     .cs-thumb {
         width: 19em;
+        margin-top: 4.4em;
     }
 
     .stellar-thumb {
