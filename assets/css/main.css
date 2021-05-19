@@ -7,6 +7,8 @@
     margin: 0;
     padding: 0;
     transition: all .1s ease; 
+    font-family: tenon, sans-serif;
+    font-style: normal;
 }
 
 html {
@@ -233,10 +235,11 @@ html {
 }
 
 h4 .dot {
-    margin: 1rem;
+    margin: 0 .5rem 0 .8rem;
     background-color: #662af2!important;
-    width: 11px!important;
-    height: 11px!important;
+    width: 16px!important;
+    height: 16px!important;
+    vertical-align: baseline;
 }
 
 h4 {
@@ -473,7 +476,8 @@ and (max-device-width : 515px) {
     .about-mrg {
         margin-top: 7rem!important;
         margin-bottom: 7rem!important;
-         line-height: 2rem!important;
+        line-height: 2.5rem!important;
+        font-size: 150%!important;
     }
 
     .wrap, .wts-wrap {
@@ -537,9 +541,9 @@ and (max-device-width : 515px) {
        top: 0em;
     }
 
-    .name, .contact, h3 {
-        font-size: 1.4rem!important;
-    }
+    /* .name, .contact, h3 {
+        font-size: 150%!important;
+    } */
 
     .footer, 
     .project-nav {
