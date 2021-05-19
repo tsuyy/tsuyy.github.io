@@ -242,6 +242,15 @@ h4 .dot {
     vertical-align: baseline;
 }
 
+.exp a {
+    color:  black;
+}
+
+.exp a:hover {
+    color: #662af2;
+    text-decoration: none;
+}
+
 h4 {
     font-weight: 300!important;
 }
