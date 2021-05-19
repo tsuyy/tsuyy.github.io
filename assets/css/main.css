@@ -88,6 +88,22 @@ html {
     left: 50%;
   }
 
+  #f1 {
+    margin-bottom: 2.6em;
+  }
+
+  #f2 {
+    margin: 2em 0 4em 0;
+  }
+
+  #f3 {
+    margin-bottom: 3em;
+  }
+
+.padded {
+    padding-bottom: 5vh;
+}
+
 .echo-thumb {
     width: 8.5em!important;
     margin-top: 1.4em;
