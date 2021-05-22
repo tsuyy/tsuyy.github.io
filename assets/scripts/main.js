@@ -108,16 +108,27 @@ $(document).ready(function() {
                 $('.mobile ul').hide();
                 $('nav').toggleClass('overlay');
         });
+ 
+        // playground code
+        document.body.onmousemove = function(e) {
+                document.documentElement.style.setProperty('--x',(e.clientX)+'px');
+                document.documentElement.style.setProperty('--y',(e.clientY)+'px');
+        }
 
-        // project thumbnail
-        // var projectThumb = document.getElementById('thumb');
+        const workItems = document.querySelectorAll('#projects ul li');
+        const preview = document.querySelectorAll('#preview-img img');
 
-        // window.onmousemove = function (e) {
-        //         var x = e.clientX,
-        //             y = e.clientY;
-        //         projectThumb.style.top = (y) + 'px';
-        //         projectThumb.style.left = (x) + 'px';
-
-        // };      
+        workItems.forEach((h4, i) => {
+                h4.addEventListener('mouseover', () => { 
+                        preview[i].classList.add('visible');
+                });
+                h4.addEventListener('mouseleave', () => {
+                        preview[i].classList.remove('visible');
+                });
+                h4.addEventListener('mousemove', (e) => {
+                        preview[i].style.left = e.clientX  - 200 + 'px';
+                        preview[i].style.top = e.clinetY + 'px';
+                });
+        });
 
 });
