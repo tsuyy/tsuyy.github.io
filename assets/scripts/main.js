@@ -121,9 +121,11 @@ $(document).ready(function() {
         workItems.forEach((h4, i) => {
                 h4.addEventListener('mouseover', () => { 
                         preview[i].classList.add('visible');
+                        preview[i].style.opacity = 1;
                 });
                 h4.addEventListener('mouseleave', () => {
                         preview[i].classList.remove('visible');
+                        preview[i].style.opacity = 0.1;
                 });
                 h4.addEventListener('mousemove', (e) => {
                         preview[i].style.left = e.clientX  - 200 + 'px';
