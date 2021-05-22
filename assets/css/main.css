@@ -9,10 +9,27 @@
     transition: all .1s ease; 
     font-family: tenon, sans-serif;
     font-style: normal;
+    cursor: none;
 }
 
 html {
     scroll-behavior: smooth;
+    font-smooth: antialiased;
+	text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    background-color: #fafafa;
+}
+
+html::before {
+    content:"";
+    position:fixed;
+    width:40px;
+    height:40px;
+    background:#662af2;
+    border-radius:50%;
+    top:var(--y,0);
+    left:var(--x,0);
+    transform:translate(-50%,-50%);
 }
 
 #hamburger {
@@ -164,20 +181,6 @@ html {
     color: #000!important;
     text-decoration-line: none;
 }
-
-/* a.p-thumb {
-    text-decoration:none;
-    position:relative;
-    color: #000;
-}
-.p-thumb span#thumb {
-    display:none;
-}
-.p-thumb:hover span#thumb {
-    display:block;
-    position:fixed;
-    overflow:hidden;
-} */
 
 .wts-constraints {
     width: 50vw;
@@ -340,10 +343,11 @@ h6 {
 }
 
 .about-mrg {
-    margin-top: 7.3rem;
+    margin-top: 11.7vh;
     margin-bottom: 12rem;
     line-height: 1.75em;
     font-weight: 400;
+    font-size: 4vh;
 }
 
 .mobile-hr,
@@ -399,6 +403,7 @@ h6 {
 
 .contact {
     margin-bottom: 4rem;
+    font-size: 3vh;
 }
 
 .footer a,
@@ -426,10 +431,102 @@ h6 {
     cursor: pointer;
 }
 
+/* PLAYGROUND CODE */
+#projects {
+    display: flex;
+    position: relative;
+}
+
+#projects ul {
+    list-style: none;
+}
+
+#projects ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+#preview-img img {
+    width: 27vw;
+    /* height: 40vh; */
+    position: absolute;
+    visibility: hidden;
+    transition: visibility 0.2s ease-in-out;
+}
+
+#projects ul:hover > li {
+    opacity: 0.4;
+}
+  
+#projects ul:hover > li:hover {
+    transform: translateX(5px);
+    opacity: 1;
+}
+
+.visible {
+    visibility: visible;
+    transition: visibility 0.2s .1s ease-in-out;
+}
+
+.mask {
+    background: 
+      radial-gradient(circle 20px 
+                      at var(--x,0) var(--y,0), 
+                      #fff 99%,#000 100%) 
+                      fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.purple-mask {
+    background: 
+        radial-gradient(circle 20px 
+                        at var(--x,0) var(--y,0), 
+                        #fff 99%,#662af2 100%) 
+                        fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    -webkit-text-fill-color: transparent;
+
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 100px) 
 and (max-device-width : 515px) {
+
+    html::before { 
+        display: none!important;
+    }
+
+    .mask {
+        background: 
+          radial-gradient(circle 0px 
+                          at var(--x,0) var(--y,0), 
+                          #fff 99%,#000 100%) 
+                          fixed;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color:transparent;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .purple-mask {
+        background: 
+            radial-gradient(circle 0px 
+                            at var(--x,0) var(--y,0), 
+                            #fff 99%,#662af2 100%) 
+                            fixed;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color:transparent;
+        -webkit-text-fill-color: transparent;
+    
+    }
 
     .hide {
         display: none;

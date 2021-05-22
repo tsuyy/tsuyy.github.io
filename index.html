@@ -62,12 +62,12 @@
     <main>
         <div class="container">
             <div class="row justify-content-center page-section" id="hello">
-                <div class="col-md-10">
-                    <h3 class="about-mrg animated pulse">
-                        <span class="name">Hi there ~ My name is Yvonne Tsu 💁🏻‍♀️</span> I am a product designer & front end developer based in the Bay Area, CA.
-                        I always strive to create intuitive and meaningful experiences & deliver balance between functionality and aesthetics ~<br /><br />
-                        <span class="contact"><span class="serif">say hello —</span>
-                            <a tabindex="0" class="clipboard" id="copy" data-clipboard-target="#copy"
+                <div class="col-md-12">
+                    <h3 class="about-mrg animated pulse mask">
+                        <span class="name">Hi there! I'm Yvonne Tsu </span> — a product designer & front end developer based in the Bay Area, CA.
+                        My passion lies in creating intuitive and meaningful experiences that strike a balance between functionality and aesthetics.<br /><br />
+                        <span class="contact"><span class="serif">let's connect —</span>
+                            <a tabindex="0" class="clipboard purple-mask" id="copy" data-clipboard-target="#copy"
                                 data-toggle="tooltip" data-trigger="focus" data-placement="right"
                                 title="copied to clipboard!">yvonnnetsu@gmail.com</a>
                         </span>
@@ -75,35 +75,68 @@
                 </div>
             </div>
             <div class="row justify-content-center page-section" id="projects">
-                <div class="col-md-10">
+                <div class="col-md-12">
                     <h6>SELECTED PROJECTS</h6>
                     <hr />
+                    <ul class="hide">
+                        <li>
+                            <a href="/whats-that-sound">
+                                <h4><span class="serif">What's That Sound</span><span class="dot hide"></span>
+                                    <span class="mobile-br"></span>UX research and musical mobile game design
+                                </h4>
+                            </a>
+                        </li>
+                        <hr />
+                        <li>
+                            <a href="/salus">
+                                <h4><span class="serif">Salus</span><span class="dot hide"></span>
+                                    <span class="mobile-br"></span>Dashboard design
+                                </h4>
+                            </a>
+                        </li>
+                        <hr />
+                        <li>
+                            <a href="/echo">
+                                <h4><span class="serif">Echo</span><span class="dot hide"></span>
+                                    <span class="mobile-br"></span>UX research and mobile app design
+                                </h4>
+                            </a>
+                        </li>
+                        <hr />
+                        <li>
+                            <a href="/card-sort-study">
+                                <h4><span class="serif">Card Sort Study</span><span class="dot hide"></span>
+                                    <span class="mobile-br"></span>UX research and analysis
+                                </h4>
+                            </a>
+                        </li>
+                        <hr />
+                        <li>
+                            <a href="/goodies">
+                                <h4><span class="serif">Goodies</span><span class="dot hide"></span>
+                                    <span class="mobile-br"></span>Mobile app design
+                                </h4>
+                            </a>
+                        </li>
+                        <hr />
+                        <li>
+                            <a href="/stentor">
+                                <h4><span class="serif">Stentor Wallet</span><span class="dot hide"></span>
+                                    <span class="mobile-br"></span>Mobile app design
+                                </h4>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-5 project">
-                    <div class="wrap justify-content-center salus-wrap">
-                        <a href="/salus" id="salus">
-                            <img src="./assets/images/salus-mock4.png" alt="salus-thumbnail"
-                                class="img-fluid project-thumb salus-thumb" />
-                        </a>
-                    </div>
+                <div id="preview-img" class="hide">
+                    <img src="./assets/images/wts.png" alt="whats-that-sound-preview" class="img-fluid" />
+                    <img src="./assets/images/salus-mock4.png" alt="salus-preview" class="img-fluid" />
+                    <img src="./assets/images/echo-1.png" alt="echo-preview" class="img-fluid" />
+                    <img src="./assets/images/cs-thumb.png" alt="card-sort-study-preview" class="img-fluid" />
+                    <img src="./assets/images/goodies-01.png" alt="goodies-preview" class="img-fluid" />
+                    <img src="./assets/images/stentor-wallet.png" alt="stentor-wallet-preview" class="img-fluid" />
                 </div>
-                <div class="col-md-5 project">
-                    <div class="wrap justify-content-center echo-wrap">
-                        <a href="/echo" id="echo">
-                            <img src="assets/images/echo-thumb2.png" alt="echo-thumbnail"
-                                class="img-fluid project-thumb echo-thumb" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5 project">
-                    <div class="wrap justify-content-center">
-                        <a href="/goodies">
-                            <img src="./assets/images/goodies-splash.png" alt="goodies-thumbnail"
-                                class="img-fluid project-thumb goodies-thumb" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5 project">
+                <div class="col-md-5 project mobile">
                     <div class="wrap justify-content-center">
                         <a href="/whats-that-sound">
                             <img src="./assets/images/wts-thumb.png" alt="wts-thumbnail"
@@ -111,25 +144,23 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- <div class="col-md-5 project">
-                    <div class="wrap justify-content-center eos-wrap">
-                        <a href="#projects" id="eos" data-toggle="tooltip" data-placement="right" title="coming soon!">
-                            <img src="./assets/images/eos-thumb.png" alt="eos-thumbnail"
-                                class="img-fluid project-thumb eos-thumb" />
-                        </a>
-                    </div>
-                </div> -->
-
-                <div class="col-md-5 project">
-                    <div class="wrap justify-content-center">
-                        <a href="/stentor">
-                            <img src="./assets/images/stentor-thumb-01.png" alt="stentor-thumbnail"
-                                class="img-fluid project-thumb" />
+                <div class="col-md-5 project mobile">
+                    <div class="wrap justify-content-center salus-wrap">
+                        <a href="/salus" id="salus">
+                            <img src="./assets/images/salus-mock4.png" alt="salus-thumbnail"
+                                class="img-fluid project-thumb salus-thumb" />
                         </a>
                     </div>
                 </div>
-                <div class="col-md-5 project p0"><br class="hide" />
+                <div class="col-md-5 project mobile">
+                    <div class="wrap justify-content-center echo-wrap">
+                        <a href="/echo" id="echo">
+                            <img src="assets/images/echo-thumb2.png" alt="echo-thumbnail"
+                                class="img-fluid project-thumb echo-thumb" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5 project p0 mobile"><br class="hide" />
                     <div class="wrap justify-content-center">
                         <a href="/card-sort-study">
                             <img src="./assets/images/cs-thumb.png" alt="challenge-thumbnail"
@@ -137,17 +168,25 @@
                         </a>
                     </div>
                 </div>
-                <!-- <div class="col-md-5 project p0 mrg-btm"><br class="hide" />
+                <div class="col-md-5 project mobile">
                     <div class="wrap justify-content-center">
-                        <a href="/stellar">
-                            <img src="./assets/images/stellar-browser.png" alt="stellar-thumbnail"
-                                class="img-fluid project-thumb stellar-thumb" />
+                        <a href="/goodies">
+                            <img src="./assets/images/goodies-splash.png" alt="goodies-thumbnail"
+                                class="img-fluid project-thumb goodies-thumb" />
                         </a>
                     </div>
-                </div> -->
+                </div>
+                <div class="col-md-5 project mobile">
+                    <div class="wrap justify-content-center">
+                        <a href="/stentor">
+                            <img src="./assets/images/stentor-thumb-01.png" alt="stentor-thumbnail"
+                                class="img-fluid project-thumb" />
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="row justify-content-center page-section" id="resume">
-                <div class="col-md-10 mrg-btm exp">
+                <div class="col-md-12 mrg-btm exp mask">
                     <h6>EXPERIENCE</h6>
                     <hr />
                     <h4><span class="serif">Web Specialist</span><span class="dot hide"></span>
@@ -172,18 +211,18 @@
                         <span class="mobile-br"></span>Stentor Technology</h4>
                     <p class="spacing">NOV 2017 - APR 2018</p>
                     <p class='desc'>
-                        I worked with the design team to develop the static marketing site. I also directed the design sprint for the mobile wallet application and
+                        I worked with the design team to develop the static marketing site. I also directed the design sprint for the mobile wallet app and
                         developed high-fidelity interactive prototypes by collaborating with the engineering team in agile development cycles.
-                    </p>
+                    <!-- </p>
                     <hr />
                     <h4><span class="serif">Web Developer</span><span class="dot hide"></span>
                         <span class="mobile-br"></span>SEAM</h4>
                     <p class="spacing">JUL - AUG 2017</p>
-                    <p class='desc'>I was in charge of the development of a marketing site for a tech startup as they were building a team collaboration web application.</p>
+                    <p class='desc'>I was in charge of the development of a marketing site for a tech startup as they were building a team collaboration web application.</p> -->
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-10 mrg-btm edu">
+                <div class="col-md-12 mrg-btm edu mask">
                     <h6>EDUCATION</h6>
                     <hr />
                     <h4><span class="serif">University of Miami</span><span class="dot hide"></span>
@@ -203,7 +242,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-10 sk">
+                <div class="col-md-12 sk mask">
                     <h6>SKILLS</h6>
                     <hr />
                     <h4><span class="serif">Design</span><span class="dot hide"></span>
@@ -217,9 +256,9 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-12">
                     <h3 class="footer">
-                        <a target="_black" class="serif"
+                        <a target="_black" class="serif mask"
                             href="//drive.google.com/file/d/1tT0UVyH3rVreShKn80tlvwvcWO2snc4c/view?usp=sharing">
                             resume pdf
                         </a>
