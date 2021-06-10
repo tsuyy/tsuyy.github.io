@@ -449,7 +449,6 @@ h6 {
 
 #preview-img img {
     width: 27vw;
-    /* height: 40vh; */
     position: absolute;
     visibility: hidden;
     transition: visibility 0.3s ease-in-out;
@@ -460,7 +459,7 @@ h6 {
     opacity: 0.4;
     transition: opacity .3s ease-in-out;
 }
-  
+
 #projects ul:hover > li:hover {
     transform: translateX(5px);
     opacity: 1;
@@ -470,64 +469,49 @@ h6 {
     visibility: visible;
 }
 
-/* .mask {
-    background: 
-      radial-gradient(circle 20px 
-                      at var(--x,0) var(--y,0), 
-                      #fff 99%,#000 100%) 
-                      fixed;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color:transparent;
-    -webkit-text-fill-color: transparent;
+/* carousel code */
+.carousel {
+    background: #fff;
+    transition: opacity .3s ease-in-out;
 }
 
-.purple-mask {
-    background: 
-        radial-gradient(circle 20px 
-                        at var(--x,0) var(--y,0), 
-                        #fff 99%,#662af2 100%) 
-                        fixed;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color:transparent;
-    -webkit-text-fill-color: transparent;
+  .flickity-viewport {
+      height: 45vh;
+  }
+  
+  .carousel-cell {
+    margin: 1vh 0 0 6vw;
+    overflow: hidden;
+  }
+  
+  .carousel-cell img {
+    display: block;
+    height: 400px;
+  }
 
-} */
+  ol.flickity-page-dots {
+    display: none;
+  }
+
+  .carousel-cell:not(.is-selected) {
+    opacity: .2;
+  }
+
+
+
+/* carousel code  ==   button.flickity-button  */
+  
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 100px) 
 and (max-device-width : 515px) {
 
-    /* html::before { 
-        display: none!important;
-    }
-
-    .mask {
-        background: 
-          radial-gradient(circle 0px 
-                          at var(--x,0) var(--y,0), 
-                          #fff 99%,#000 100%) 
-                          fixed;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color:transparent;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .purple-mask {
-        background: 
-            radial-gradient(circle 0px 
-                            at var(--x,0) var(--y,0), 
-                            #fff 99%,#662af2 100%) 
-                            fixed;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color:transparent;
-        -webkit-text-fill-color: transparent;
-    
-    } */
+    /* carousel code */
+    .carousel-cell img {
+        height: 400px;
+      }
+    /* carousel code */
 
     .hide {
         display: none;
@@ -611,17 +595,13 @@ and (max-device-width : 515px) {
     }
 
     .echo-thumb {
-        width: 7em!important;
+        width: 14em!important;
         margin-top: 1em;
     }
 
     .wts-thumb {
         width: 24em;
         margin-top: 5.5em;
-    }
-
-    .eos-thumb {
-        width: 15em;
     }
     
     .goodies-thumb {

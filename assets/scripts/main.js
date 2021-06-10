@@ -22,45 +22,45 @@ $(document).ready(function() {
                 $(this).addClass('active');
         });
 
-        $(document).ready(function() {
-                $('a[href*=#]').bind('click', function(e) {
-                        e.preventDefault(); // prevent hard jump, the default behavior
+        // $(document).ready(function() {
+        //         $('a[href*=#]').bind('click', function(e) {
+        //                 e.preventDefault(); // prevent hard jump, the default behavior
 
-                        const target = $(this).attr('href'); // Set the target as variable
+        //                 const target = $(this).attr('href'); // Set the target as variable
 
-                        // perform animated scrolling by getting top-position of target-element and set it as scroll target
-                        $('html, body')
-                                .stop()
-                                .animate(
-                                        {
-                                                scrollTop: $(target).offset().top,
-                                        },
-                                        600,
-                                        function() {
-                                                // eslint-disable-next-line no-restricted-globals
-                                                location.hash = target; // attach the hash (#jumptarget) to the pageurl
-                                        }
-                                );
+        //                 // perform animated scrolling by getting top-position of target-element and set it as scroll target
+        //                 $('html, body')
+        //                         .stop()
+        //                         .animate(
+        //                                 {
+        //                                         scrollTop: $(target).offset().top,
+        //                                 },
+        //                                 600,
+        //                                 function() {
+        //                                         // eslint-disable-next-line no-restricted-globals
+        //                                         location.hash = target; // attach the hash (#jumptarget) to the pageurl
+        //                                 }
+        //                         );
 
-                        return false;
-                });
-        });
+        //                 return false;
+        //         });
+        // });
 
-        $(window)
-                .scroll(function() {
-                        const scrollDistance = $(window).scrollTop() + 100;
+        // $(window)
+        //         .scroll(function() {
+        //                 const scrollDistance = $(window).scrollTop() + 100;
 
-                        // Assign active class to nav links while scolling
-                        $('.page-section').each(function(i) {
-                                if ($(this).position().top <= scrollDistance) {
-                                        $('.nav-items a.active').removeClass('active');
-                                        $('.nav-items a')
-                                                .eq(i)
-                                                .addClass('active');
-                                }
-                        });
-                })
-                .scroll();
+        //                 // Assign active class to nav links while scolling
+        //                 $('.page-section').each(function(i) {
+        //                         if ($(this).position().top < scrollDistance) {
+        //                                 $('.nav-items a.active').removeClass('active');
+        //                                 $('.nav-items a')
+        //                                         .eq(i)
+        //                                         .addClass('active');
+        //                         }
+        //                 });
+        //         })
+        //         .scroll();
 
         // loop array of colors on hover
         // const colors = ['#fff5f5', '#fff6e8', '#fff9db', '#f0fffa', '#ebf5ff', '#f1f0ff'];
@@ -75,7 +75,6 @@ $(document).ready(function() {
 
         // clipboard.js
         const clipboard = new ClipboardJS('.clipboard');
-
         clipboard.on('success', function(e) {
                 console.log('copied!');
                 $('#copy').tooltip('show');
@@ -85,15 +84,6 @@ $(document).ready(function() {
                 console.log(e);
         });
 
-
-        // tooltip
-        $('.eos-wrap').on('mouseenter', function(e) {
-                $('#eos').tooltip('show');
-        });
-
-        $('.eos-wrap').on('mouseleave', function(e) {
-                $('#eos').tooltip('hide');
-        });
 
 
         // hamburger interaction
@@ -133,4 +123,27 @@ $(document).ready(function() {
                 });
         });
 
+        // carousel code
+        var $carousel = $('.carousel').flickity({
+                imagesLoaded: true,
+                percentPosition: false,
+        });
+
+        var $imgs = $carousel.find('.carousel-cell img');
+        // get transform property
+        var docStyle = document.documentElement.style;
+        var transformProp = typeof docStyle.transform == 'string' ? 'transform' : 'WebkitTransform';
+        // get Flickity instance
+        var flkty = $carousel.data('flickity');
+
+        // $carousel.on( 'scroll.flickity', function() {
+        //         flkty.slides.forEach( function( slide, i ) {
+        //                 var img = $imgs[i];
+        //                 var x = ( slide.target + flkty.x ) * -1/3;
+        //                 img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+        //         });
+        // });
+
+
 });
+
