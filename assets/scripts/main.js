@@ -22,45 +22,45 @@ $(document).ready(function() {
                 $(this).addClass('active');
         });
 
-        // $(document).ready(function() {
-        //         $('a[href*=#]').bind('click', function(e) {
-        //                 e.preventDefault(); // prevent hard jump, the default behavior
+        $(document).ready(function() {
+                $('a[href*=#]').bind('click', function(e) {
+                        e.preventDefault(); // prevent hard jump, the default behavior
 
-        //                 const target = $(this).attr('href'); // Set the target as variable
+                        const target = $(this).attr('href'); // Set the target as variable
 
-        //                 // perform animated scrolling by getting top-position of target-element and set it as scroll target
-        //                 $('html, body')
-        //                         .stop()
-        //                         .animate(
-        //                                 {
-        //                                         scrollTop: $(target).offset().top,
-        //                                 },
-        //                                 600,
-        //                                 function() {
-        //                                         // eslint-disable-next-line no-restricted-globals
-        //                                         location.hash = target; // attach the hash (#jumptarget) to the pageurl
-        //                                 }
-        //                         );
+                        // perform animated scrolling by getting top-position of target-element and set it as scroll target
+                        $('html, body')
+                                .stop()
+                                .animate(
+                                        {
+                                                scrollTop: $(target).offset().top,
+                                        },
+                                        600,
+                                        function() {
+                                                // eslint-disable-next-line no-restricted-globals
+                                                location.hash = target; // attach the hash (#jumptarget) to the pageurl
+                                        }
+                                );
 
-        //                 return false;
-        //         });
-        // });
+                        return false;
+                });
+        });
 
-        // $(window)
-        //         .scroll(function() {
-        //                 const scrollDistance = $(window).scrollTop() + 100;
+        $(window)
+                .scroll(function() {
+                        const scrollDistance = $(window).scrollTop() + 100;
 
-        //                 // Assign active class to nav links while scolling
-        //                 $('.page-section').each(function(i) {
-        //                         if ($(this).position().top < scrollDistance) {
-        //                                 $('.nav-items a.active').removeClass('active');
-        //                                 $('.nav-items a')
-        //                                         .eq(i)
-        //                                         .addClass('active');
-        //                         }
-        //                 });
-        //         })
-        //         .scroll();
+                        // Assign active class to nav links while scolling
+                        $('.page-section').each(function(i) {
+                                if ($(this).position().top < scrollDistance) {
+                                        $('.nav-items a.active').removeClass('active');
+                                        $('.nav-items a')
+                                                .eq(i)
+                                                .addClass('active');
+                                }
+                        });
+                })
+                .scroll();
 
         // loop array of colors on hover
         // const colors = ['#fff5f5', '#fff6e8', '#fff9db', '#f0fffa', '#ebf5ff', '#f1f0ff'];
