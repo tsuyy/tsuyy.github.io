@@ -508,9 +508,9 @@ and (min-device-width : 100px)
 and (max-device-width : 515px) {
 
     /* carousel code */
-    .carousel-cell img {
+    /* .carousel-cell img {
         height: 400px;
-      }
+      } */
     /* carousel code */
 
     .hide {
