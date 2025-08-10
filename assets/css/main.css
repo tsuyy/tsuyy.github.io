@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/pgf5wor.css");
 
+:root {
+    --primary-purple: #662af2;
+}
+
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -126,29 +130,9 @@ html {
     margin-top: 1.4em;
 }
 
-.eos-thumb {
-    width: 18em;
-    margin-top: 2.3em;
-}
-
 .wts-thumb {
     width: 25em;
     margin-top: 4.8em;
-}
-
-.goodies-thumb {
-    width: 11.5em;
-    margin-top: 1.9em;
-}
- 
-.stellar-thumb {
-    margin-top: 6.8em;
-    width: 23em;
-}
-
-.cs-thumb {
-    margin-top: 5em;
-    width: 22em;
 }
 
 .salus-thumb {
@@ -172,7 +156,7 @@ html {
 .col-md-2 a,
 .col-sm a,
 .content-mrg a {
-    color: #662af2;
+    color: var(--primary-purple);
 }
 
 .col-md-2 a:hover,
@@ -231,7 +215,7 @@ html {
 
 .nav-link.active, 
 .nav-link:hover {
-    color: #662af2!important;
+    color: var(--primary-purple)!important;
     transition: all 0.3s;
     font-weight: 500!important;
 }
@@ -239,7 +223,7 @@ html {
 .dot {
     height: 11px;
     width: 11px;
-    background-color: #662af2;
+    background-color: var(--primary-purple);
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
@@ -255,7 +239,7 @@ html {
 
 h4 .dot {
     margin: 0 .5rem 0 .8rem;
-    background-color: #662af2!important;
+    background-color: var(--primary-purple)!important;
     width: 16px!important;
     height: 16px!important;
     vertical-align: baseline;
@@ -266,7 +250,7 @@ h4 .dot {
 }
 
 .exp a:hover {
-    color: #662af2;
+    color: var(--primary-purple);
     text-decoration: none;
 }
 
@@ -309,29 +293,10 @@ h6 {
     top: -1.4em;
 }
 
-.stellar-vid {
-    margin: 6em 0 3em 0;
-    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.1);
-}
-
-.cc-vid {
-    margin: 2em 0 2em 0;
-    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.1); 
-    width: 100%;
-}
-
-.goodies-vid {
-    width: 30%;
-}
-
-
 .echo-vid {
     width: 60%!important;
 }
 
-.goodies-spread {
-    margin-bottom: 10rem;
-}
 
 .mrg-top-btm {
     margin-top: 8rem;
@@ -384,7 +349,7 @@ h6 {
 }
 
 .hl {
-    color: #662af2;
+    color: var(--primary-purple);
 }
 
 #resume {
@@ -403,7 +368,7 @@ h6 {
 
 .contact {
     margin-bottom: 4rem;
-    font-size: 3vh;
+    font-size: 2.75vh;
 }
 
 .footer a,
@@ -415,14 +380,14 @@ h6 {
 .footer a:hover,
 .project-nav a:hover {
     text-decoration: none;
-    color: #662af2;
+    color: var(--primary-purple);
     transition: all 0.3s linear;
     cursor: pointer;
 }
 
 .contact a {
     text-decoration: none;
-    color: #662af2;
+    color: var(--primary-purple);
 }
 
 .contact a:hover {
@@ -469,49 +434,12 @@ h6 {
     visibility: visible;
 }
 
-/* carousel code */
-.carousel {
-    background: #fff;
-    transition: opacity .3s ease-in-out;
-}
-
-  .flickity-viewport {
-      height: 45vh;
-  }
-  
-  .carousel-cell {
-    margin: 1vh 0 0 6vw;
-    overflow: hidden;
-  }
-  
-  .carousel-cell img {
-    display: block;
-    height: 400px;
-  }
-
-  ol.flickity-page-dots {
-    display: none;
-  }
-
-  .carousel-cell:not(.is-selected) {
-    opacity: .2;
-  }
-
-
-
-/* carousel code  ==   button.flickity-button  */
   
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 100px) 
 and (max-device-width : 515px) {
-
-    /* carousel code */
-    /* .carousel-cell img {
-        height: 400px;
-      } */
-    /* carousel code */
 
     .hide {
         display: none;
@@ -572,7 +500,7 @@ and (max-device-width : 515px) {
     }
 
     .mobile ul li a.active {
-        color: #662af2;
+        color: var(--primary-purple);
     }
 
     .mrg-top-btm {
@@ -603,29 +531,7 @@ and (max-device-width : 515px) {
         width: 24em;
         margin-top: 5.5em;
     }
-    
-    .goodies-thumb {
-        margin-top: 1.9em;
-        width: 9em;
-    }
 
-    .cs-thumb {
-        margin-top: 4em;
-        width: 19em;
-    }
- 
-    .stellar-thumb {
-        margin-top: 5em;
-        width: 18em;
-    }
-    
-    .goodies-media-wrap {
-        height: 670px;
-    }
-
-    .goodies-vid {
-        width: 80%!important;
-    }
 
     .echo-vid {
         width: 95%!important;
@@ -656,7 +562,7 @@ and (max-device-width : 515px) {
 
     .footer a,
     .contact a {
-        color: #662af2!important;
+        color: var(--primary-purple)!important;
     }
 
     iframe {
@@ -732,7 +638,7 @@ and (max-device-width : 1024px) {
       
     .footer a,
     .contact a {
-        color: #662af2!important;
+        color: var(--primary-purple)!important;
     }
 }
 

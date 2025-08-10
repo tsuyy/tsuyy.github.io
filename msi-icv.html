@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159974880-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-159974880-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,6 +20,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <!-- normalize css --> 
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -34,13 +45,13 @@
                     <span></span>
                 </div>
                 <ul>
-                    <li><a href="/#about">ABOUT</a></li>
+                    <li><a href="/#hello">HELLO</a></li>
                     <li><a href="/#projects">PROJECTS</a></li>
                     <li><a href="/#resume">RESUME</a></li>
                 </ul>
             </div>
             <div class="nav-items hide">
-                <a class="nav-link" href="/#about">ABOUT</a>
+                <a class="nav-link" href="/#hello">HELLO</a>
                 <a class="nav-link" href="/#projects">PROJECTS</a>
                 <a class="nav-link" href="/#resume">RESUME</a>
             </div>
@@ -50,40 +61,59 @@
         <div class="container project-show">
             <div class="row justify-content-center">
                 <div class="col-md-10">
-                    <h3 class="landing-mrg">
-                        This is a coding challenge for a technical interview.
-                    </h3>
-                    <div class="text-center mrg-top-btm">
-                        <a href="https://yvntsu.design/coding-challenge/"><img src="assets/images/clone-browser.png"
-                                class="img-fluid animated pulse" alt="code-challenge" /></a>
-                    </div>
+                    <h3 class="landing-mrg">Designing for High-Stakes Mobility - In-Car Video Systems</h3>
+                    <img src="assets/images/m500.jpg" class="img-fluid mrg-btm animated pulse" />
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h6>OVERVIEW</h6>
-                    <p>
-                        The objective of the coding challenge was to create a partial clone of an existing website
-                        within 5 hours. Primarily focusing on implementing the CSS animations. It was a fun little
-                        exercise. <br class="hide" />I passed the technical interview and worked as a contract front end
-                        developer for the job I interviewed.
-                    </p>
-                    <div class="text-center">
-                        <img src="assets/images/cc-vid.gif" class="img-fluid cc-vid" alt="code-challenge-gif" />
-                    </div>
+                <div class="col-md-10">
+                    <h6>DESIGN BRIEF</h6>
+                    <p class="content-mrg">
+                        Public safety officers rely on in-vehicle camera systems to capture and review evidence while in motion. 
+                        The main goal is to create and maintain an experience that delivers <strong>clarity, speed, and trust</strong> — even in physically constrained, high-pressure environments.
+                    </p><br class="hide" />
                 </div>
-                <div class="col-md-2">
+            </div>
+            <div class="row justify-content-md-center mrg-top-btm">
+                <div class=col-md-1></div>
+                <div class="col-sm">
+                    <h6>COLLABORATION</h6>
+                    <p>Product owner<br />Development<br/>Industrial design<br/>Documentation</p>
+                </div>
+                <div class="col-sm">
                     <hr class="mobile-hr" />
-                    <h6>ROLE</h6>
-                    <p>Web development</p>
-                    <hr />
-                    <h6>TIMELINE</h6>
-                    <p>Oct 2017</p>
-                    <hr />
-                    <h6>TECHNOLOGY</h6>
+                    <h6>MY ROLE</h6>
+                    <p>UI/UX design<br/>Support UX research</p>
+                </div>
+                <div class="col-sm">
+                    <hr class="mobile-hr" />
+                    <h6>VIEW</h6>
                     <p>
-                        HTML / CSS<br />CSS Animation<br />JavaScript<br />jQuery
+                        <a href="https://www.motorolasolutions.com/en_us/video-security-access-control/in-car-video-systems/m500.html" target="_blank">M500</a><br/>
+                        <a href="https://www.motorolasolutions.com/en_xu/video-security-access-control/in-car-video-systems/m500/m5ch-control-head.html" target="_blank">M500E</a><br/>
                     </p>
+                </div>
+            </div>
+            <div class="row justify-content-center mrg-top-btm">
+                <div class="col-md-10"><br class="hide" />
+                    <h6>CHALLENGES</h6>
+                    <ul class="ul-mrg content-mrg">
+                        <li>Ensure streamlined and intuitive HCI to support mission-critical workflows in high-stress environments.</li>
+                        <li>Maintain user trust through clear visual and audio cues under variable lighting and motion conditions.</li>
+                        <li>Support cohesive and seamless integrations between in-car systems, body cameras, evidence management software, and mobile apps.</li>  
+                        <li>Create a single, cohesive system that can adapt its interface and functionality based on the user's role and context, ensuring that each person gets the tools they need without being overwhelmed by features they don't. </li>                  
+                    </ul>                
+                </div>
+            </div>
+            <div class="row justify-content-center mrg-top-btm">
+                <div class="col-md-10">
+                    <br class="hide" />
+                    <h6>PROCESS</h6>
+                    <ul class="ul-mrg content-mrg">
+                        <li>Field Research — participated in ride-alongs, contextual interviews, usability/concept testing with admins and officers. </li>
+                        <li>User Journey — mapped complex, end-to-end workflows and key touchpoints for various user personas across multiple devices.</li>                        
+                        <li>Iterative Refinement — addressed user pain points gathered from research insights and prototyping/testing.</li>                    
+                    </ul>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -99,10 +129,10 @@
                                     d="M4.5 10a.5.5 0 01.5-.5h10.5a.5.5 0 010 1H5a.5.5 0 01-.5-.5z" clip-rule="evenodd">
                                 </path>
                             </svg>
-                            back
+                            Back
                         </a>
-                        <a href="/stellar">
-                            stellar
+                        <a href="/msi-oobe">
+                            Out-of-box Experience
                             <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 20 20"
                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"

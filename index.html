@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159974880-1"></script>
     <script>
@@ -37,11 +39,11 @@
 
 <body>
     <header>
-        <nav class="nav fixed-top">
+        <nav class="nav fixed-top" aria-label="Main navigation">
             <a class="navbar-brand" href="/">
                 <img src="assets/images/yvntsu.png" alt="logo" class="logo">
             </a>
-            <div class="mobile">
+            <div class="mobile" aria-label="Mobile navigation">
                 <div id="hamburger">
                     <span></span>
                     <span></span>
@@ -49,61 +51,61 @@
                     <span></span>
                 </div>
                 <ul>
-                    <li><a class="active" href="#hello">HELLO</a></li>
+                    <li><a class="active" href="#hello" aria-label="Homepage">HELLO</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#resume">RESUME</a></li>
                 </ul>
             </div>
-            <div class="nav-items hide">
-                <a class="nav-link active" href="#hello">HELLO</a>
-                <a class="nav-link" href="#projects">PROJECTS</a>
-                <a class="nav-link" href="#resume">RESUME</a>
+            <div class="nav-items hide" aria-label="Desktop navigation">
+                <a class="nav-link active" href="#hello" aria-label="Homepage">HELLO</a>
+                <a class="nav-link" href="#projects" aria-label="Projects">PROJECTS</a>
+                <a class="nav-link" href="#resume" aria-label="Resume">RESUME</a>
             </div>
         </nav>
     </header>
-    <main>
+    <main aria-label="Main content">
         <div class="container">
             <div class="row justify-content-center page-section" id="hello">
                 <div class="col-md-12">
                     <h3 class="about-mrg animated pulse mask">
-                        <span class="name">Hey there, I'm Yvonne Tsu </span> — <br class="mobile-br"/>a user experience designer <br class="hide"/><br class="mobile-br"/>& web developer based in Chicago, IL. 
+                        <span class="name">Hey there, I'm Yvonne Tsu </span> — <br class="mobile-br"/>a ux designer <br class="hide"/><br class="mobile-br"/>specializing in data visualization, mission-critical systems, and AI enhanced experiences. 
                         <br/><br/>
-                        <!-- <span class="contact">Let's connect —
+                        <span class="contact">Currently, solving design challenges at
+                            <a href="//www.motorolasolutions.com/en_us.html" target="_blank">Motorola Solutions</a>
+                        </span>
+                         <!-- <span class="contact">Let's connect —
                             <a tabindex="0" class="clipboard purple-mask" id="copy" data-clipboard-target="#copy"
                                 data-toggle="tooltip" data-trigger="focus" data-placement="right"
                                 title="copied to clipboard!">yvonnnetsu@gmail.com</a>
                         </span> -->
-                        <span class="contact">Currently, solving design challenges at
-                            <a href="//www.motorolasolutions.com/en_us.html" target="_blank">Motorola Solutions</a>
-                        </span>
                     </h3>
                 </div>
             </div>
-            <div class="row justify-content-center page-section" id="projects">
+            <div class="row justify-content-center page-section" id="projects" aria-label="Projects section">
                 <div class="col-md-12">
-                    <h6>SELECTED PROJECTS</h6>
+                    <h6>PROJECTS</h6>
                     <hr />
                     <ul class="hide">
-                        <!-- <li>
-                            <a href="/msi-oobe">
-                                <h4><span class="serif">Out-of-box Experience</span><span class="dot hide"></span>
-                                    <span class="mobile-br"></span>UX research, design, and web development
-                                </h4>
-                            </a>
-                        </li>
-                        <hr /> -->
                         <li>
-                            <a href="/whats-that-sound">
-                                <h4><span class="serif">What's That Sound</span><span class="dot hide"></span>
-                                    <span class="mobile-br"></span>UX research and mobile game design
+                            <a href="/msi-icv">
+                                <h4><span class="serif">In-car Video Solution</span><span class="dot hide"></span>
+                                    <span class="mobile-br"></span>UX research and human-computer interaction design
                                 </h4>
                             </a>
                         </li>
                         <hr />
                         <li>
-                            <a href="/slo">
-                                <h4><span class="serif">Save Lake O</span><span class="dot hide"></span>
-                                    <span class="mobile-br"></span>Web development and data visualization
+                            <a href="/msi-oobe">
+                                <h4><span class="serif">Out-of-box Experience</span><span class="dot hide"></span>
+                                    <span class="mobile-br"></span>UX research and service design
+                                </h4>
+                            </a>
+                        </li>
+                        <hr />
+                        <li>
+                            <a href="/whats-that-sound">
+                                <h4><span class="serif">What's That Sound</span><span class="dot hide"></span>
+                                    <span class="mobile-br"></span>UX research and mobile game design
                                 </h4>
                             </a>
                         </li>
@@ -124,7 +126,7 @@
                             </a>
                         </li>
                         <hr />
-                        <li>
+                        <!-- <li>
                             <a href="/goodies">
                                 <h4><span class="serif">Goodies</span><span class="dot hide"></span>
                                     <span class="mobile-br"></span>Mobile app design
@@ -146,41 +148,37 @@
                                     <span class="mobile-br"></span>Mobile app design
                                 </h4>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <div id="preview-img" class="hide">
-                    <!-- <img src="./assets/images/v700-gs.png" alt="v700-gs-preview" class="img-fluid" />
-                    <img src="./assets/images/l6q-gs.png" alt="l6q-gs-preview" class="img-fluid" /> -->
+                    <img src="./assets/images/m500-thumb.png" alt="m500-preview" class="img-fluid" />
+                    <img src="./assets/images/oobe_preview.png" alt="oobe-preview" class="img-fluid" />
                     <img src="./assets/images/wts.png" alt="whats-that-sound-preview" class="img-fluid" />
-                    <img src="./assets/images/slo-mock.png" alt="save-lake-o-preview" class="img-fluid" />
                     <img src="./assets/images/salus-mock.png" alt="salus-preview" class="img-fluid" />
                     <img src="./assets/images/echo-1.png" alt="echo-preview" class="img-fluid" />
-                    <img src="./assets/images/goodies-01.png" alt="goodies-preview" class="img-fluid" />
-                    <img src="./assets/images/cs-thumb.png" alt="card-sort-study-preview" class="img-fluid" />
-                    <img src="./assets/images/stentor-wallet.png" alt="stentor-wallet-preview" class="img-fluid" />
                 </div>
-                <!-- <div class="col-md-5 project mobile">
+                <div class="col-md-5 project mobile">
                     <div class="wrap justify-content-center">
-                        <a href="/msi-v700">
-                            <img src="./assets/images/v700-gs-thumb.png" alt="v700-gs-thumbnail"
-                                class="img-fluid project-thumb v700-gs-thumb" />
+                        <a href="/msi-icv">
+                            <img src="./assets/images/m500-thumb.png" alt="m500-thumbnail"
+                                class="img-fluid project-thumb m500-thumb" />
                         </a>
                     </div>
                 </div>
                 <div class="col-md-5 project mobile">
                     <div class="wrap justify-content-center">
-                        <a href="/msi-l6q">
-                            <img src="./assets/images/l6q-gs-thumb.png" alt="l6q-gs-thumbnail"
-                                class="img-fluid project-thumb l6q-gs-thumb" />
+                        <a href="/msi-oobe">
+                            <img src="./assets/images/oobe_preview.png" alt="oobe-thumbnail"
+                                class="img-fluid project-thumb oobe-thumb" />
                         </a>
                     </div>
-                </div> -->
+                </div>
                 <div class="col-md-5 project mobile">
                     <div class="wrap justify-content-center">
                         <a href="/whats-that-sound">
                             <img src="./assets/images/wts-thumb.png" alt="wts-thumbnail"
-                                class="img-fluid project-thumb wts-thumb" />
+                                class="img-fluid project-thumb wts-thumb" loading="lazy"/>
                         </a>
                     </div>
                 </div>
@@ -188,7 +186,7 @@
                     <div class="wrap justify-content-center salus-wrap">
                         <a href="/salus" id="salus">
                             <img src="./assets/images/salus-mock.png" alt="salus-thumbnail"
-                                class="img-fluid project-thumb salus-thumb" />
+                                class="img-fluid project-thumb salus-thumb" loading="lazy"/>
                         </a>
                     </div>
                 </div>
@@ -196,37 +194,12 @@
                     <div class="wrap justify-content-center echo-wrap">
                         <a href="/echo" id="echo">
                             <img src="assets/images/echo-thumb2.png" alt="echo-thumbnail"
-                                class="img-fluid project-thumb echo-thumb" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5 project p0 mobile"><br class="hide" />
-                    <div class="wrap justify-content-center">
-                        <a href="/card-sort-study">
-                            <img src="./assets/images/cs-thumb.png" alt="challenge-thumbnail"
-                                class="img-fluid project-thumb cs-thumb" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5 project mobile">
-                    <div class="wrap justify-content-center">
-                        <a href="/goodies">
-                            <img src="./assets/images/goodies-splash.png" alt="goodies-thumbnail"
-                                class="img-fluid project-thumb goodies-thumb" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5 project mobile">
-                    <div class="wrap justify-content-center">
-                        <a href="/stentor">
-                            <img src="./assets/images/stentor-thumb-01.png" alt="stentor-thumbnail"
-                                class="img-fluid project-thumb" />
+                                class="img-fluid project-thumb echo-thumb" loading="lazy"/>
                         </a>
                     </div>
                 </div>
             </div>
-        <!-- <div class="container"> -->
-            <div class="row justify-content-center page-section" id="resume">
+            <div class="row justify-content-center page-section" id="resume" aria-label="Resume section">
                 <div class="col-md-12 mrg-btm exp mask">
                     <h6>EXPERIENCE</h6>
                     <hr />
@@ -235,25 +208,9 @@
                     </h4>
                     <p class="spacing">SEP 2021 - PRESENT</p>
                     <p class='desc'>
-                        I lead UX design for mission-critical software across a multi-device ecosystem including in-car camera systems, desktop, and mobile, improving usability for 1M+ public safety users in the US, Canada, and Europe.
-                        I designed and launched customer onboarding sites (CMS) and optimized the Out-of-Box Experience (OOBE) based on UX research, cutting support tickets through clear UX writing, intuitive workflows, and service design improvements.
-                    </p>
-                    <hr />
-                    <h4><span class="serif">UX Design Intern</span><span class="dot hide"></span>
-                        <span class="mobile-br"></span><a href="//www.marsh.com/us/home.html" target="_blank">Marsh</a>
-                    </h4>
-                    <p class="spacing">JUL 2021 - AUG 2021</p>
-                    <p class='desc'>
-                        I worked on a variety of projects ranging from design-based storytelling to developing brand and identity strategies.
-                    </p>
-                    <hr />
-                    <h4><span class="serif">Web Specialist</span><span class="dot hide"></span>
-                        <span class="mobile-br"></span>University of Miami
-                    </h4>
-                    <p class="spacing">NOV 2019 - MAY 2021</p>
-                    <p class='desc'>
-                        At the School of Education and Human Development, I maintained its digital communications and ensured a 
-                        cohesive web presence. I also assisted in the migration of the website to a CMS platform and designed the internal communication platform.
+                        I lead UX design for in-vehicle camera systems used by public safety professionals in North America and Europe. 
+                        I designed and launched adaptive onboarding sites that reduced support tickets and onboarding time for field officers and administrators. 
+                        My work involved close collaboration with cross-functional teams to ensure the UX was scalable and resilient for critical, high-stakes situations.
                     </p>
                     <hr />
                     <h4><span class="serif">Data Viz Assistant</span><span class="dot hide"></span>
@@ -261,22 +218,9 @@
                     </h4>
                     <p class="spacing">JUL 2020 - DEC 2020</p>
                     <p class='desc'>
-                        I assisted with creating charts, maps, and infographics on state and national public health policies in Latin American countries using state-level 
-                        and national data, and transformed them into static and interactive graphics. I also helped develop and maintain the graphics.
+                        I assisted with creating interactive charts, maps, and infographics on public health policies in Latin American countries using national 
+                        and regional health data during COVID-19. 
                     </p>
-                    <hr />
-                    <h4><span class="serif">Design Consultant</span><span class="dot hide"></span>
-                        <span class="mobile-br"></span>Stentor Technology</h4>
-                    <p class="spacing">NOV 2017 - APR 2018</p>
-                    <p class='desc'>
-                        I worked with the design team to develop the static marketing site. I also directed the design sprint for the mobile wallet app and
-                        developed high-fidelity interactive prototypes by collaborating with the engineering team in agile development cycles.
-                    </p>
-                    <!-- <hr />
-                    <h4><span class="serif">Web Developer</span><span class="dot hide"></span>
-                        <span class="mobile-br"></span>SEAM</h4>
-                    <p class="spacing">JUL - AUG 2017</p>
-                    <p class='desc'>I was in charge of the development of a marketing site for a tech startup as they were building a team collaboration web application.</p> -->
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -288,28 +232,28 @@
                     </h4>
                     <p class="spacing">2019 - 2021</p>
                     <hr />
-                    <h4><span class="serif">General Assembly SF</span><span class="dot hide"></span>
-                        <span class="mobile-br"></span>Full Stack Web Development Immersive
-                    </h4>
-                    <p class="spacing">2017</p>
-                    <hr />
                     <h4><span class="serif">University of Washington</span><span class="dot hide"></span>
                         <span class="mobile-br"></span>B.A. Communications & Art History
                     </h4>
                     <p class="spacing">2012 - 2016</p>
+                    <hr />
+                    <h4><span class="serif">General Assembly SF</span><span class="dot hide"></span>
+                        <span class="mobile-br"></span>Full Stack Web Development Immersive
+                    </h4>
+                    <p class="spacing">2017</p>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-12 sk mask">
-                    <h6>SKILLS</h6>
+                    <h6>TOOLKIT</h6>
                     <hr />
                     <h4><span class="serif">Design</span><span class="dot hide"></span>
                         <span class="mobile-br"></span>
-                        Prototyping - Generative / Evaulative UX Research - Data Visualization
+                        Design Systems - UX Research - Data Viz - UX Writing - Figma - Procreate - Adobe CC
                     </h4>
                     <hr />
                     <h4><span class="serif">Development</span><span class="dot hide"></span>
-                        <span class="mobile-br"></span>HTML - CSS - JS - D3 - Mapbox Studio 
+                        <span class="mobile-br"></span>HTML - CSS - JS - D3.js - Mapbox Studio 
                     </h4>
                 </div>
             </div>
