@@ -106,8 +106,8 @@ $(document).ready(function() {
                         preview[i].style.opacity = 0.1;
                 });
                 h4.addEventListener('mousemove', (e) => {
-                        preview[i].style.left = e.clientX  - 200 + 'px';
-                        preview[i].style.top = e.clinetY + 'px';
+                        preview[i].style.left = e.clientX - 100 + 'px';
+                        preview[i].style.top = e.clientY - 600 + 'px';
                 });
         });
 

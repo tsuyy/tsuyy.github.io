@@ -247,6 +247,7 @@ h4 .dot {
 
 .exp a {
     color:  black;
+    text-decoration: none;
 }
 
 .exp a:hover {
@@ -581,7 +582,7 @@ and (max-device-width : 1024px) {
     }
 
     .container {
-        margin-left: 5em;
+        margin-left: 8em;
     }
 
     .tb-hide {
@@ -603,23 +604,9 @@ and (max-device-width : 1024px) {
         margin-top: 4em;
     }
 
-    .eos-thumb {
-        width: 12em;
-    }
-
-    .goodies-thumb {
-        width: 7.5em;
-        margin-top: 1.2em;
-    }
-
     .cs-thumb {
         width: 15em;
         margin-top: 3.2em;
-    }
-
-    .stellar-thumb {
-        margin-top: 4.2em;
-        width: 16em;
     }
 
     .tablet-br {
@@ -645,9 +632,11 @@ and (max-device-width : 1024px) {
 /* iPads (landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-
+and (max-device-width : 1024px) {
+        .container {
+        margin-left: 8em;
+        max-width: 40em;
+    }
 }
 
 /* iPads (portrait) ----------- */
@@ -656,7 +645,8 @@ and (min-device-width : 1024px)
 and (orientation : portrait) {
 
     .container {
-        margin-left: 4em;
+        margin-left: 10em;
+        max-width: 50em;
     }
 
     .wrap {
@@ -679,19 +669,9 @@ and (orientation : portrait) {
         margin-top: 1em;
     }
 
-    .goodies-thumb {
-        width: 9.5em;
-        margin-top: 1.7em;
-    }
-
     .cs-thumb {
         width: 19em;
         margin-top: 4.4em;
-    }
-
-    .stellar-thumb {
-        margin-top: 5.8em;
-        width: 20em;
     }
 }
 
