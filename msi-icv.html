@@ -100,9 +100,8 @@
                     <h6>RESEARCH + INSIGHTS</h6>
                     <p class="content-mrg">
                         Ride-alongs and contextual interviews revealed that officers relied heavily on <strong>muscle memory, audio confirmation, and glanceable visual cues </strong>while interacting with the system in motion.
-
-                        Research also surfaced a recurring trust issue:
-                        users often felt uncertain whether recordings had successfully started, increasing cognitive stress during critical moments.
+                        Research also surfaced recurring trust issues: users were often uncertain whether recordings had successfully started, whether body cameras were properly synced with the in-car system, or whether evidence tags had carried across devices correctly — increasing cognitive stress during critical moments.
+                    </p>
                 </div>
             </div>
             <div class="row justify-content-center mrg-top-btm">
@@ -113,43 +112,107 @@
                         The in-car experience needed to support rapid decision-making under <strong>motion, glare, vibration, time pressure, and divided attention</strong> — while remaining efficient with critical workflows spanning connected devices and backend evidence systems. 
                     </p>
                     <p>While simultaneously driving or responding to incident, officers often need to:</p>
-                    <img class="img-mrg img-fluid" src="assets/images/officer jtbd.png"/>
+                    <img class="img-mrg img-fluid" src="assets/images/officer jtbd.svg"/>
                     <br/>
                     <p>The challenge was not maximizing feature visibility — it was <strong>reducing cognitive effort while preserving trust and situational awareness</strong>.</p>                
                 </div>
                 <div class="col-md-10"><br class="hide" />
                     <h4 class="content-mrg hl"><span class="dot"></span>Role-specific JTBDs</h4>
-                    <img class="img-mrg img-fluid" src="assets/images/m500_personas+jtbd.2.png"/>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card content-mrg">
+                                <div class="card-body text-center">
+                                    <h1 class="display-3 card-title">👮🏻</h1>
+                                    <h5>officer</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>JTBD</strong><br/>respond to incidents<br/>capture evidence<br/>review evidence</li>
+                                        <li class="list-group-item"><strong>CONTEXT</strong><br/>🚨 high-stress<br/>🚓 in-vehicle<br/>🖥️ in office</li>
+                                        <li class="list-group-item"><strong>UX PRIORITY</strong><br/>👀 glanceability<br/>🏁 speed<br/>✅ clarity</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card content-mrg">
+                                <div class="card-body text-center">
+                                    <h1 class="display-3 card-title">👨🏻‍💻</h1>
+                                    <h5>admin</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>JTBD</strong><br/>fleet management<br/>device configuration<br/>troubleshoot</li>
+                                        <li class="list-group-item"><strong>CONTEXT</strong><br/>🖥️ in office<br/>🚓 in-vehicle</li>
+                                        <li class="list-group-item"><strong>UX PRIORITY</strong><br/>🔍 visitbility<br/>🛠 diagnostics<br/>💡 clarity<br/>🗂️ organization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h1 class="display-3 card-title">👨🏻‍🔧</h1>
+                                    <h5 >technician</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>JTBD</strong><br/>installation<br/>deployment<br/>repair</li>
+                                        <li class="list-group-item"><strong>CONTEXT</strong><br/>🚧 body shop<br/>🚓 in-vehicle</li>
+                                        <li class="list-group-item"><strong>UX PRIORITY</strong><br/>🛠 diagnostics<br/>💡 clarity<br/><br/><br/></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <p class="content-mrg">
-                        Another key challenge was designing for users with fundamentally different goals and operational contexts. Patrol officers needed fast, glanceable interactions optimized for high-pressure situations, while administrators and technicians required deeper system visibility, configuration controls, and evidence management workflows.
-                        Clearly defining the JTBDs for each user group helped prioritize information hierarchy, interaction patterns, and feature accessibility across the system.                    
+                        A key challenge was designing for users with different operational needs. Defining role-specific JTBDs helped shape information hierarchy, interaction patterns, and workflow prioritization across the system.
                     </p>
                 </div>
                 <div class="col-md-10"><br class="hide" />
                     <h4 class="content-mrg hl"><span class="dot"></span>Designing within a connected ecosystem</h4>
+                    <img class="img-mrg img-fluid" src="assets/images/m500_connected_systems.svg"/>
                     <p class="content-mrg">
                         Although my primary focus was the in-car interface, the experience was deeply connected to a broader ecosystem that included body cameras, mobile applications, and evidence management platforms. Many workflows extended across devices, requiring close collaboration with adjacent product teams to maintain consistency in interaction patterns, system feedback, terminology, and evidence flow continuity.
                     </p>
                 </div>
             </div>
-            <div class="row justify-content-center mrg-top-btm">
+            <!-- <div class="row justify-content-center mrg-top-btm">
                 <div class="col-md-10">
                     <br class="hide" />
                     <h6>KEY DESIGN DECISIONS</h6>
-                    <h4 class="content-mrg hl"><span class="dot"></span>Glanceable information hierarchy</h4>
-                    <p class="content-mrg">The priamry users frequently interact with the system while driving or multitasking under time pressure. In these environments, long visual scanning and dense interfaces increased cognitive load and delayed decision-making. The interface needed to support rapid recognition and confidence at a glance rather than prolonged attention.</p>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card content-mrg">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title hl">Glanceable information hierarchy</h5>
+                                    <p class="card-text">Dense interfaces and excessive visual scanning increase cognitive load while in motion and high stress situations. The experience needed to support rapid recognition and confidence at a glance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card content-mrg">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title hl">Progressive disclosure</h5>
+                                    <p class="card-text">Surfaced only essential information upfront while allowing deeper controls when needed to reduce cognitive load for officers while still supporting admin and supervisory workflows.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card content-mrg">
+                                <img src="assets/images/" class="card-img-top" alt="cross-plateform interaction">
+                                <div class="card-body">
+                                    <h5 class="card-title hl">Cross-platform interaction consistency</h5>
+                                    <p class="card-text">Aligned interaction patterns and system feedback across in-car, body camera, and evidence workflows to reduce uncertainty, context switching, and trust issues across connected systems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-10"><br class="hide" />
-                    <h4 class="content-mrg hl"><span class="dot"></span>Progressive disclosure to balance speed vs depth of information</h4>
-                    <p class="content-mrg">Different user roles and operational contexts required different levels of information depth. Officers in active situations prioritized speed and clarity, while administrators or reviewers occasionally needed more detailed controls and evidence data. Progressive disclosure reduced interface clutter without sacrificing functionality.</p>
-                </div>
-            </div>
+            </div> -->
             <div class="row justify-content-center mrg-top-btm">
                 <div class="col-md-10">
                     <br class="hide" />
                     <h6>IMPACT</h6>
                     <ul class="ul-mrg content-mrg">
-                        <li>Reduced friction across capture → review → evidence workflows</li>
+                        <li>Reduced friction across capture → tag → review workflows</li>
                         <li>Improved user confidence during high-pressure interactions</li>
                         <li>Decreased onboarding complexity through standardized interaction patterns</li>    
                         <li>Established reusable UX frameworks later adapted across additional product lines</li>                                      

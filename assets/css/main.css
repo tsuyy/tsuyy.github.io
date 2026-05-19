@@ -543,9 +543,9 @@ and (max-device-width : 515px) {
         font-size: 1.3rem!important;
     }
 
-    .project-show ul {
+    /* .project-show ul {
         margin-left: 1.75em;
-    }
+    } */
     
     .p0 {
        top: 0em;
